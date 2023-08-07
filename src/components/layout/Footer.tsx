@@ -1,71 +1,80 @@
+import { useEffect, useState } from "react";
+
 const Footer = () => {
+  const [lastUpdated, setLastUpdated] = useState("");
+
+  useEffect(() => {
+    // Function to get the current date and format it as "Month Year"
+    const getCurrentDate = () => {
+      const currentDate = new Date();
+      const month = currentDate.toLocaleString("default", { month: "long" });
+      const year = currentDate.getFullYear();
+      return `${month} ${year}`;
+    };
+
+    // Set the lastUpdated state with the current date
+    setLastUpdated(getCurrentDate());
+  }, []);
+
   return (
     <>
-      <footer>
-        <p>© Designed and built by Matt Espinoza</p>
-      </footer>
+      <div className="footer-container">
+        <div className="left-content">
+          {/* Updated: October 2022 */}
+          <p className="updated">{`Updated: ${lastUpdated}`}</p>
+        </div>
+        <div className="right-content">
+          {/* My Life Updates 📭 ↗ */}
+          <p className="my-updates">
+            My Life Updates 📭 ↗<br />
+            <span>(read by 1,500+ people)</span>
+          </p>
+        </div>
+      </div>
+
+      <p className="designed">© Designed and built by Matt Espinoza</p>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
+        .footer-container {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          justify-content: space-between;
           align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
+          padding: 20px;
           border-top: 1px solid #eaeaea;
+        }
+
+        p {
+          margin: 0;
+          font-size: 0.875rem;
+          text-align: center;
+        }
+
+        .updated {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #555;
+        }
+
+        .my-life-updates {
           display: flex;
-          justify-content: center;
           align-items: center;
         }
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-          text-align: center;
-        }
-
-        .title,
-        p {
-          color: #333;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        p {
-          margin: 0;
+        .my-updates {
           font-size: 1rem;
-          text-align: center;
+          font-weight: bold;
         }
 
-        @media (max-width: 600px) {
-          .title {
-            font-size: 2.5rem;
-          }
+        .my-updates span {
+          font-size: 0.75rem;
+          color: #555;
+        }
+
+        .designed {
+          font-size: 0.875rem;
+          margin-top: 3rem;
+          text-align: center;
+          font-weight: bold;
         }
       `}</style>
     </>

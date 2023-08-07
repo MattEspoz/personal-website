@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Home | Matt Espinoza</title>
+        <title> Matt Espinoza // @mattespoz</title>
         <meta name="description" content="Welcome to my personal website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

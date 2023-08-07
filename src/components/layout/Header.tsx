@@ -1,4 +1,3 @@
-// Header.tsx
 import {
   Box,
   Flex,
@@ -26,6 +25,11 @@ const Header = () => {
           fontWeight="bold"
           ml={2}
           color="gray.500"
+          _hover={{
+            color: "teal.500",
+            textDecoration: "underline",
+            transform: "translateY(-2px)",
+          }}
         >
           @mattespoz
         </Link>
@@ -33,10 +37,18 @@ const Header = () => {
       <Spacer />
       <Box display={{ base: "none", md: "block" }}>
         {/* Your navigation links */}
-        <Link href="https://www.twitter.com/mattespoz" mr={4}>
+        <Link
+          href="https://www.twitter.com/mattespoz"
+          mr={4}
+          _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
+        >
           🔨 Twitter
         </Link>
-        <Link href="/projects" mr={4}>
+        <Link
+          href="/projects"
+          mr={4}
+          _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
+        >
           💌 Newsletter
         </Link>
       </Box>

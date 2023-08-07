@@ -64,23 +64,23 @@ const ProfileSection = () => {
           Welcome to my corner of the internet...
         </Text>
         <Text fontSize="xl">
-          I’m a full-stack developer passionate about building software to
-          impact millions.
+          I’m a full-stack developer passionate about{" "}
+          <Box as="span" fontWeight="bold">
+            building software to <u>impact millions.</u>
+          </Box>
         </Text>
 
-        {/* Blue Section */}
-        <Box
-          bg="rgba(107, 70, 193, 0.6)"
-          color="white"
-          p={4}
-          mt={6}
-          borderRadius="md"
+        {/* Purple Section */}
+        <Text
+          color="#6B46C1"
+          mt={4}
+          fontSize="md"
+          fontWeight="bold"
+          fontStyle="italic"
         >
-          <Text fontSize="l">
-            TL;DR: I’m a 21 y/o who sold his crypto company 💰. Now I'm building
-            a new stealth company in AI.
-          </Text>
-        </Box>
+          TL;DR: I’m a 21 y/o who sold his crypto company. Now I'm building a
+          new stealth company in AI.
+        </Text>
 
         {/* Gray Section */}
         <Text fontSize="xs" color="gray.500" mt={4}>
