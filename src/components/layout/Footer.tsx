@@ -17,6 +17,11 @@ const Footer = () => {
     setLastUpdated(getCurrentDate());
   }, []);
 
+  const handleMyUpdatesClick = () => {
+    // Redirect to https://compound.super.site/ in a new tab
+    window.open("https://compound.beehiiv.com/", "_blank");
+  };
+
   return (
     <>
       <div className="footer-container">
@@ -26,8 +31,8 @@ const Footer = () => {
         </div>
         <div className="right-content">
           {/* My Life Updates 📭 ↗ */}
-          <p className="my-updates">
-            My Life Updates 📭 ↗<br />
+          <p className="my-updates" onClick={handleMyUpdatesClick}>
+            <u>My Life Updates</u> 📭 ↗<br />
             <span>(read by 1,500+ people)</span>
           </p>
         </div>
@@ -71,6 +76,13 @@ const Footer = () => {
           font-size: 1rem;
           font-weight: bold;
           color: #6b46c1;
+          cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+          transition: color 0.2s ease, transform 0.2s ease; /* Add transition for color and transform */
+        }
+
+        .my-updates:hover {
+          color: teal; /* Change color on hover to teal */
+          transform: translateY(-2px); /* Add floating effect on hover */
         }
 
         .my-updates span {

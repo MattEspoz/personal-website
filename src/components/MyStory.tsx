@@ -1,4 +1,11 @@
-import { Box, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Link as ChakraLink,
+  Heading,
+  Link,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 
 const MyStorySection = () => {
   return (
@@ -20,8 +27,16 @@ const MyStorySection = () => {
             Where it all began...
           </Text>
           <Text fontSize="md" mb={4}>
-            I built a couple side projects like this, and this, but I’m probably
-            best known for being the prev. CEO of Agora Labs.
+            I built a couple of side projects like this and this, but I’m
+            probably best known for being the{" "}
+            <ChakraLink
+              href="https://www.agoralabs.xyz/"
+              isExternal
+              color="blue.500"
+              textDecoration="underline"
+            >
+              prev. CEO of Agora Labs.
+            </ChakraLink>
           </Text>
           <Text fontSize="md" mb={4}>
             I’ve raised hundreds of thousands of dollars to build my first
