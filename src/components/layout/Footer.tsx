@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import HorizontalLine from "../HorizontalLine";
 
 const Footer = () => {
   const [lastUpdated, setLastUpdated] = useState("");
@@ -32,6 +33,12 @@ const Footer = () => {
         </div>
       </div>
 
+      <HorizontalLine />
+
+      <p className="emoji" role="img" aria-label="Crystal Ball">
+        🔮
+      </p>
+
       <p className="designed">© Designed and built by Matt Espinoza</p>
 
       <style jsx>{`
@@ -63,6 +70,7 @@ const Footer = () => {
         .my-updates {
           font-size: 1rem;
           font-weight: bold;
+          color: #6b46c1;
         }
 
         .my-updates span {
@@ -70,11 +78,18 @@ const Footer = () => {
           color: #555;
         }
 
+        .emoji {
+          font-size: 2rem;
+          margin-bottom: -0.75rem; /* Adjust the value to reduce space */
+          margin-top: 3rem;
+        }
+
         .designed {
           font-size: 0.875rem;
-          margin-top: 3rem;
+          margin-top: 1rem;
           text-align: center;
           font-weight: bold;
+          color: #555;
         }
       `}</style>
     </>

@@ -1,6 +1,5 @@
 import { Box, Flex, Heading, HStack, IconButton, Text } from "@chakra-ui/react";
 import Image from "next/image";
-
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ProfileSection = () => {
@@ -29,6 +28,7 @@ const ProfileSection = () => {
             aria-label="Instagram"
             icon={<FaInstagram />}
             fontSize="xl"
+            size="sm"
           />
           <IconButton
             aria-label="Twitter"
