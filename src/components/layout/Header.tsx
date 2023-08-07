@@ -2,6 +2,7 @@
 import {
   Box,
   Flex,
+  Heading,
   IconButton,
   Link,
   Spacer,
@@ -14,20 +15,29 @@ const Header = () => {
 
   return (
     <Flex as="header" align="center" p={4}>
-      <Box>
+      <Flex direction="row" alignItems="center">
         {/* Your logo or brand */}
-        <Link href="/" fontSize="xl" fontWeight="bold">
-          Matt Espinoza
+        <Heading fontSize="xl" fontWeight="bold">
+          Matt Espinoza ✦
+        </Heading>
+        <Link
+          href="https://www.twitter.com/mattespoz"
+          fontSize="sm"
+          fontWeight="bold"
+          ml={2}
+          color="gray.500"
+        >
+          @mattespoz
         </Link>
-      </Box>
+      </Flex>
       <Spacer />
       <Box display={{ base: "none", md: "block" }}>
         {/* Your navigation links */}
-        <Link href="/about" mr={4}>
-          About
+        <Link href="https://www.twitter.com/mattespoz" mr={4}>
+          🔨 Twitter
         </Link>
         <Link href="/projects" mr={4}>
-          Projects
+          💌 Newsletter
         </Link>
       </Box>
       <Box ml={4}>

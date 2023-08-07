@@ -1,4 +1,6 @@
 // pages/index.tsx
+import HorizontalLine from "@/components/HorizontalLine";
+import MyStory from "@/components/MyStory";
 import ProfileSection from "@/components/ProfileSection";
 import { Box } from "@chakra-ui/react";
 import Head from "next/head";
@@ -13,6 +15,8 @@ export default function Home() {
       </Head>
 
       <ProfileSection />
+      <HorizontalLine />
+      <MyStory />
     </div>
   );
 }
