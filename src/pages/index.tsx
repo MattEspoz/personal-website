@@ -2,6 +2,7 @@
 import HorizontalLine from "@/components/HorizontalLine";
 import MyStory from "@/components/MyStory";
 import ProfileSection from "@/components/ProfileSection";
+import Projects from "@/components/project/Projects";
 import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 
@@ -17,6 +18,8 @@ export default function Home() {
       <ProfileSection />
       <HorizontalLine />
       <MyStory />
+      <HorizontalLine />
+      <Projects />
     </div>
   );
 }

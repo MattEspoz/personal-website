@@ -10,8 +10,6 @@ import type { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <div className="gradient" />
-
       <ChakraProvider theme={theme}>
         <div className="container">
           <Header />

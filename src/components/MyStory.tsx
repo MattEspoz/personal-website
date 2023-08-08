@@ -23,8 +23,8 @@ const MyStorySection = () => {
               My Story
             </Box>
           </Heading>
-          <Text fontSize="sm" color="gray.500" mt="5px" mb="2px">
-            Where it all began...
+          <Text fontSize="sm" color="gray.500" mt={-3} mb={7}>
+            🪄 where it all began...
           </Text>
           <Text fontSize="md" mb={4}>
             I built a couple of side projects like this and this, but I’m

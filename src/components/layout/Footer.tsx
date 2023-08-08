@@ -19,7 +19,11 @@ const Footer = () => {
 
   const handleMyUpdatesClick = () => {
     // Redirect to https://compound.super.site/ in a new tab
-    window.open("https://compound.beehiiv.com/", "_blank");
+    window.open(
+      "https://compound.beehiiv.com/",
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   return (
@@ -33,7 +37,7 @@ const Footer = () => {
           {/* My Life Updates 📭 ↗ */}
           <p className="my-updates" onClick={handleMyUpdatesClick}>
             <u>My Life Updates</u> 📭 ↗<br />
-            <span>(read by 1,500+ people)</span>
+            <span>(read by 2,000+ people)</span>
           </p>
         </div>
       </div>
@@ -99,6 +103,7 @@ const Footer = () => {
         .designed {
           font-size: 0.875rem;
           margin-top: 1rem;
+          margin-bottom: 3rem;
           text-align: center;
           font-weight: bold;
           color: #555;

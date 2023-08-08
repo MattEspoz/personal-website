@@ -78,8 +78,8 @@ const ProfileSection = () => {
           fontWeight="bold"
           fontStyle="italic"
         >
-          TL;DR: I’m a 21 y/o who sold his crypto company. Now I'm building a
-          new stealth company in AI.
+          TL;DR: I’m a 21 y/o who sold his crypto company. Now I'm building
+          something new
         </Text>
 
         {/* Gray Section */}
