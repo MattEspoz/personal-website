@@ -41,6 +41,11 @@ const ProfileSection = () => {
             href="https://www.instagram.com/mattespoz/"
             target="_blank"
             rel="noopener noreferrer"
+            _hover={{
+              color: "teal",
+              position: "relative",
+              top: "-2px",
+            }}
           />
           <IconButton
             aria-label="Twitter"
@@ -51,6 +56,11 @@ const ProfileSection = () => {
             href="https://www.twitter.com/mattespoz"
             target="_blank"
             rel="noopener noreferrer"
+            _hover={{
+              color: "teal",
+              position: "relative",
+              top: "-2px",
+            }}
           />
           <IconButton
             aria-label="LinkedIn"
@@ -61,6 +71,11 @@ const ProfileSection = () => {
             href="https://www.linkedin.com/in/mattespoz/"
             target="_blank"
             rel="noopener noreferrer"
+            _hover={{
+              color: "teal",
+              position: "relative",
+              top: "-2px",
+            }}
           />
         </HStack>
       </Flex>
@@ -170,7 +185,7 @@ const ProfileSection = () => {
         .wave {
           display: inline-block;
           animation-name: wave-animation;
-          animation-duration: 2s;
+          animation-duration: 1.5s;
           animation-iteration-count: infinite;
         }
 

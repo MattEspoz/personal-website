@@ -1,4 +1,5 @@
 // pages/index.tsx
+import AboutSection from "@/components/About";
 import HorizontalLine from "@/components/HorizontalLine";
 import MyStory from "@/components/MyStory";
 import ProfileSection from "@/components/ProfileSection";
@@ -14,10 +15,11 @@ export default function Home() {
         <meta name="description" content="Welcome to my personal website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <ProfileSection />
       <HorizontalLine />
       <MyStory />
+      <HorizontalLine />
+      <AboutSection />
       <HorizontalLine />
       <Projects />
     </div>

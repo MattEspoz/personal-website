@@ -21,7 +21,7 @@ const Projects = () => {
       <Flex direction={{ base: "column", md: "row" }} mt={10}>
         <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
           <ProjectCard
-            title="🥇 Agora Labs"
+            title="🥇 Agora Labs (acq.)"
             description="Platform for web3 creators to token-gate and reward early supporters. Built on DeSo blockchain. Acquired by Talent Protocol."
             imageUrl="/projects/P1-Agora.png"
             demoUrl="https://www.agoralabs.xyz/"

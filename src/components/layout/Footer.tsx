@@ -3,6 +3,7 @@ import HorizontalLine from "../HorizontalLine";
 
 const Footer = () => {
   const [lastUpdated, setLastUpdated] = useState("");
+  const [emoji, setEmoji] = useState("🔮");
 
   useEffect(() => {
     // Function to get the current date and format it as "Month Year"
@@ -25,6 +26,12 @@ const Footer = () => {
       "noopener,noreferrer"
     );
   };
+  const handleEmojiHover = () => {
+    setEmoji("👾");
+    setTimeout(() => {
+      setEmoji("🔮");
+    }, 2000);
+  };
 
   return (
     <>
@@ -44,8 +51,13 @@ const Footer = () => {
 
       <HorizontalLine />
 
-      <p className="emoji" role="img" aria-label="Crystal Ball">
-        🔮
+      <p
+        className="emoji"
+        role="img"
+        aria-label="Crystal Ball"
+        onMouseEnter={handleEmojiHover}
+      >
+        {emoji}
       </p>
 
       <p className="designed">© Designed and built by Matt Espinoza</p>
