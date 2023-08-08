@@ -58,15 +58,17 @@ const Header = () => {
             _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
             display="flex"
             alignItems="center"
+            target="_blank"
           >
             <FiTwitter style={{ marginRight: "6px" }} /> Twitter
           </Link>
           <Link
-            href="/projects"
+            href="https://compound.beehiiv.com/"
             fontWeight="bold"
             _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
             display="flex"
             alignItems="center"
+            target="_blank"
           >
             <FiMail style={{ marginRight: "6px" }} /> Newsletter
           </Link>
