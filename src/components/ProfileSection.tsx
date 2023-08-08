@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, HStack, IconButton, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  HStack,
+  Heading,
+  IconButton,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -29,18 +37,30 @@ const ProfileSection = () => {
             icon={<FaInstagram />}
             fontSize="xl"
             size="sm"
+            as={Link}
+            href="https://www.instagram.com/mattespoz/"
+            target="_blank"
+            rel="noopener noreferrer"
           />
           <IconButton
             aria-label="Twitter"
             icon={<FaTwitter />}
             fontSize="xl"
             size="sm"
+            as={Link}
+            href="https://www.twitter.com/mattespoz"
+            target="_blank"
+            rel="noopener noreferrer"
           />
           <IconButton
             aria-label="LinkedIn"
             icon={<FaLinkedin />}
             fontSize="xl"
             size="sm"
+            as={Link}
+            href="https://www.linkedin.com/in/mattespoz/"
+            target="_blank"
+            rel="noopener noreferrer"
           />
         </HStack>
       </Flex>
@@ -71,21 +91,74 @@ const ProfileSection = () => {
         </Text>
 
         {/* Purple Section */}
-        <Text
-          color="#6B46C1"
-          mt={4}
-          fontSize="md"
-          fontWeight="bold"
-          fontStyle="italic"
-        >
-          TL;DR: I’m a 21 y/o who sold his crypto company. Now I'm building
-          something new
+        <Text mt={4} fontSize="md" color="#6B46C1">
+          <Box as="span" fontWeight="bold">
+            TL;DR:
+          </Box>{" "}
+          I'm a 21 y/o whose first startup was acquired by a $50m company. Since
+          then, built a ton of profitable side projects. Today, I'm going
+          full-force on something new.
         </Text>
 
         {/* Gray Section */}
         <Text fontSize="xs" color="gray.500" mt={4}>
-          Press: TechCrunch, Bloomberg, Yahoo News, CoinTelegraph, Toronto Star,
-          Collision
+          Press:{" "}
+          <Link
+            href="https://forbesbaltics.com/lv/viedokli/raksts/kerot-web-3-tendencu-vilni"
+            isExternal
+            textDecoration="underline"
+          >
+            Forbes
+          </Link>{" "}
+          <Link
+            href="https://www.forbes.com/sites/annefield/2023/05/29/teaching-entrepreneurship-and-vc-skills-to--students-of-color-and-women/"
+            isExternal
+            textDecoration="underline"
+          >
+            (2),
+          </Link>{" "}
+          <Link
+            href="https://finance.yahoo.com/finance/news/talent-protocol-supports-next-generation-130000334.html"
+            isExternal
+            textDecoration="underline"
+          >
+            Yahoo,
+          </Link>{" "}
+          <Link
+            href="https://www.bloomberg.com/press-releases/2022-10-05/talent-protocol-supports-the-next-generation-of-builders-through-the-acquisition-of-agora-labs"
+            isExternal
+            textDecoration="underline"
+          >
+            Bloomberg,
+          </Link>{" "}
+          <Link
+            href="https://top.mlh.io/2023/profiles/matt-espinoza"
+            isExternal
+            textDecoration="underline"
+          >
+            Major League Hacking,
+          </Link>{" "}
+          <Link
+            href="https://cryptobriefing.com/talent-protocol-supports-the-next-generation-of-builders-through-the-acquisition-of-agora-labs/"
+            isExternal
+            textDecoration="underline"
+          >
+            Crypto Briefing,
+          </Link>{" "}
+          <Link
+            href="https://podcasts.apple.com/fr/podcast/venture-talks-5-personal-tokens-creators-ipos-a/id1483644520?i=1000541717096"
+            isExternal
+            textDecoration="underline"
+          >
+            Venture Talks,
+          </Link>{" "}
+          <Link
+            href="https://www.instagram.com/p/Cq8UA9DrI_w/"
+            isExternal
+            textDecoration="underline"
+          >
+            CUTC
+          </Link>{" "}
         </Text>
       </Box>
 

@@ -22,7 +22,7 @@ const Projects = () => {
         <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
           <ProjectCard
             title="🥇 Agora Labs"
-            description="Platform for web3 creators to token-gate and reward early supporters. Built on DeSo blockchain. Acquired by Talent Protocol"
+            description="Platform for web3 creators to token-gate and reward early supporters. Built on DeSo blockchain. Acquired by Talent Protocol."
             imageUrl="/projects/P1-Agora.png"
             demoUrl="https://www.agoralabs.xyz/"
             tag="Featured"
@@ -42,7 +42,7 @@ const Projects = () => {
         <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
           <ProjectCard
             title="👱‍♂️ FaceX"
-            description="Full-stack app for detecting faces in photos with sign-in features and mobile responsiveness, using Clarifai API"
+            description="Full-stack app for detecting faces in photos with sign-in features and mobile responsiveness, using Clarifai API."
             imageUrl="/projects/P3-FaceX.png"
             demoUrl="https://www.example.com/project3-demo"
             tag="Featured"
@@ -51,7 +51,7 @@ const Projects = () => {
         <Box flex="1" mb={6}>
           <ProjectCard
             title="👾 1Solana"
-            description="Minimal Gif Solana marketplace with wallet sign-in, and transaction fees for every GIF added"
+            description="Minimal Gif Solana marketplace with wallet sign-in, and transaction fees for every GIF added."
             imageUrl="/projects/P5-Solana.png"
             demoUrl="https://www.example.com/project4-demo"
             tag="Featured"

@@ -7,10 +7,21 @@ import {
   Spacer,
   useColorMode,
 } from "@chakra-ui/react";
-import { FiMenu, FiMoon, FiSun } from "react-icons/fi";
+import { FiMail, FiMenu, FiMoon, FiSun, FiTwitter } from "react-icons/fi";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const handleToggleColorMode = () => {
+    if (colorMode === "light") {
+      document.body.style.backgroundImage =
+        "url('/assets/background-dark.png')";
+    } else {
+      document.body.style.backgroundImage =
+        "url('/assets/background-light.png')";
+    }
+    toggleColorMode();
+  };
 
   return (
     <Flex as="header" align="center" p={4}>
@@ -30,6 +41,8 @@ const Header = () => {
             textDecoration: "underline",
             transform: "translateY(-2px)",
           }}
+          display="flex"
+          alignItems="center"
         >
           @mattespoz
         </Link>
@@ -37,27 +50,34 @@ const Header = () => {
       <Spacer />
       <Box display={{ base: "none", md: "block" }}>
         {/* Your navigation links */}
-        <Link
-          href="https://www.twitter.com/mattespoz"
-          mr={4}
-          _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
-        >
-          🔨 Twitter
-        </Link>
-        <Link
-          href="/projects"
-          mr={4}
-          _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
-        >
-          💌 Newsletter
-        </Link>
+        <Flex alignItems="center">
+          <Link
+            href="https://www.twitter.com/mattespoz"
+            mr={2}
+            fontWeight="bold"
+            _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
+            display="flex"
+            alignItems="center"
+          >
+            <FiTwitter style={{ marginRight: "6px" }} /> Twitter
+          </Link>
+          <Link
+            href="/projects"
+            fontWeight="bold"
+            _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
+            display="flex"
+            alignItems="center"
+          >
+            <FiMail style={{ marginRight: "6px" }} /> Newsletter
+          </Link>
+        </Flex>
       </Box>
       <Box ml={4}>
         {/* Toggle dark mode */}
         <IconButton
           aria-label="Toggle Dark Mode"
           icon={colorMode === "light" ? <FiMoon /> : <FiSun />}
-          onClick={toggleColorMode}
+          onClick={handleToggleColorMode} // Use the custom handler
         />
       </Box>
     </Flex>
