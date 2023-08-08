@@ -18,8 +18,8 @@ export default function Home() {
       <ProfileSection />
       <HorizontalLine />
       <MyStory />
-      <HorizontalLine />
-      <AboutSection />
+      {/* <HorizontalLine />
+      <AboutSection /> */}
       <HorizontalLine />
       <Projects />
     </div>

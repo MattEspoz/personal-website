@@ -12,13 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <ChakraProvider theme={theme}>
-        <UpdateBanner />
-
         <div className="container">
           <Header />
-
           <HorizontalLine />
-
           <Component {...pageProps} />
 
           <HorizontalLine />
