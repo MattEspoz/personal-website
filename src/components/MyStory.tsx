@@ -59,7 +59,7 @@ const MyStorySection = () => {
               top: "-2px",
             }}
           >
-            Y Combinator's 2020 cohort
+            Y Combinator&apos;s 2020 cohort
           </ChakraLink>
           , to becoming the youngest engineer at a{" "}
           <ChakraLink
@@ -251,7 +251,7 @@ const MyStorySection = () => {
           >
             hackNY fellowship
           </ChakraLink>
-          . Now, back in Toronto, I'm gearing up to wrap up my final two
+          . Now, back in Toronto, I&apos;m gearing up to wrap up my final two
           semesters of university before I return to the US to embark full-time
           on my next venture.
         </Text>

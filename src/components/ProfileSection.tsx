@@ -92,7 +92,7 @@ const ProfileSection = () => {
             bgClip="text"
             display="inline"
           >
-            Hey, I'm Matt.
+            Hey, I&apos;m Matt.
           </Box>
         </Heading>
         <Text fontSize="sm" color="gray.500" mt="5px" mb="2px">
@@ -110,9 +110,9 @@ const ProfileSection = () => {
           <Box as="span" fontWeight="bold">
             TL;DR:
           </Box>{" "}
-          I'm a 21 y/o whose first startup was acquired by a $50m company. Since
-          then, built a ton of profitable side projects. Today, I'm going
-          full-force on something new.
+          I&apos;m a 21 y/o whose first startup was acquired by a $50m company.
+          Since then, built a ton of profitable side projects. Today, I&apos;m
+          going full-force on something new.
         </Text>
 
         {/* Gray Section */}
