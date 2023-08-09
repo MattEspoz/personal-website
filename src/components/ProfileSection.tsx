@@ -114,7 +114,7 @@ const ProfileSection = () => {
         <Text fontSize="xl">
           I’m a full-stack developer passionate about{" "}
           <Box as="span" fontWeight="bold">
-            building software to <u>impact millions.</u>
+            building software to <u>reach millions.</u>
           </Box>
         </Text>
 

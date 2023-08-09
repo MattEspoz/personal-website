@@ -25,7 +25,7 @@ const Projects = () => {
             description="Platform for web3 creators to token-gate and reward early supporters. Built on DeSo blockchain. Acquired by Talent Protocol."
             imageUrl="/projects/P1-Agora.png"
             demoUrl="https://www.agoralabs.xyz/"
-            tag="Personal Project"
+            tag="Featured"
           />
         </Box>
         <Box flex="1" mb={6}>
@@ -34,7 +34,7 @@ const Projects = () => {
             description="Auto-generated Twitter suggestions for posts. Easily connect your account and get ideas for new posts."
             imageUrl="/projects/P2-GenQuote.png"
             demoUrl="https://mattespoz.github.io/quote-generator"
-            githubUrl="https://github.com/MattEspoz/genquote"
+            githubUrl="https://github.com/MattEspoz/quote-generator"
             tag="Featured"
           />
         </Box>
@@ -45,9 +45,9 @@ const Projects = () => {
             title="👱‍♂️ FaceX"
             description="Full-stack app for detecting faces in photos with sign-in features and mobile responsiveness, using Clarifai API."
             imageUrl="/projects/P3-FaceX.png"
-            demoUrl="https://www.example.com/project3-demo"
-            githubUrl="https://github.com/MattEspoz/facex"
-            tag="Stealth"
+            demoUrl="https://solana-gif-marketplace.vercel.app/"
+            githubUrl="https://github.com/MattEspoz/face-recognition-brain"
+            tag="Personal Project"
           />
         </Box>
         <Box flex="1" mb={6}>
@@ -55,9 +55,9 @@ const Projects = () => {
             title="👾 1Solana"
             description="Minimal Gif Solana marketplace with wallet sign-in, and transaction fees for every GIF added."
             imageUrl="/projects/P5-Solana.png"
-            demoUrl="https://www.example.com/project4-demo"
-            githubUrl="https://github.com/MattEspoz/1solana"
-            tag="Featured"
+            demoUrl="https://solana-gif-marketplace.vercel.app/"
+            githubUrl="https://github.com/MattEspoz/solana-gif-marketplace"
+            tag="Personal Project"
           />
         </Box>
       </Flex>

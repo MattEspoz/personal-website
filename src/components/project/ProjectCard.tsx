@@ -5,11 +5,9 @@ import {
   CardBody,
   Flex,
   Heading,
-  LinkOverlay,
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
@@ -65,24 +63,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </Text>
 
         {/* Demo Image */}
-        <Link href={demoUrl} passHref>
-          <LinkOverlay>
-            <div
-              style={{
-                width: "100%",
-                paddingTop: "75%", // Set to achieve a 4:3 aspect ratio
-                position: "relative",
-              }}
-            >
-              <Image
-                src={imageUrl}
-                alt={`${title} Screenshot`}
-                layout="fill" // Fill the container size
-                objectFit="cover" // Maintain aspect ratio and cover the container
-              />
-            </div>
-          </LinkOverlay>
-        </Link>
+        <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+          <div
+            style={{
+              width: "100%",
+              paddingTop: "75%", // Set to achieve a 4:3 aspect ratio
+              position: "relative",
+            }}
+          >
+            <Image
+              src={imageUrl}
+              alt={`${title} Screenshot`}
+              layout="fill" // Fill the container size
+              objectFit="cover" // Maintain aspect ratio and cover the container
+            />
+          </div>
+        </a>
       </Box>
       <CardBody>
         <Heading as="h4" size="md" mb={2}>
@@ -93,36 +89,42 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </Text>
         <Flex justify="flex-start" align="center">
           {/* View Demo Button with External Link Icon */}
-          <Link href={demoUrl} passHref>
-            <LinkOverlay>
-              <Button
-                size="xs"
-                colorScheme="purple"
-                bg="purple.300"
-                _hover={{ bg: "purple.500", color: "white" }}
-                leftIcon={<FaExternalLinkAlt />} // External link icon
-                mr={2}
-              >
-                View Demo
-              </Button>
-            </LinkOverlay>
-          </Link>
+          <a
+            href={demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <Button
+              size="xs"
+              colorScheme="purple"
+              bg="purple.300"
+              _hover={{ bg: "purple.500", color: "white" }}
+              leftIcon={<FaExternalLinkAlt />} // External link icon
+              mr={2}
+            >
+              View Demo
+            </Button>
+          </a>
 
           {/* Github Button with Github Icon */}
           {githubUrl && (
-            <Link href={githubUrl} passHref>
-              <LinkOverlay>
-                <Button
-                  size="xs"
-                  colorScheme="white"
-                  bg="#475668"
-                  _hover={{ bg: "#2D3848", color: "white" }}
-                  leftIcon={<FaGithub />} // Github icon
-                >
-                  Github
-                </Button>
-              </LinkOverlay>
-            </Link>
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              <Button
+                size="xs"
+                colorScheme="white"
+                bg="#475668"
+                _hover={{ bg: "#2D3848", color: "white" }}
+                leftIcon={<FaGithub />} // Github icon
+              >
+                Github
+              </Button>
+            </a>
           )}
         </Flex>
       </CardBody>

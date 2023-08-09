@@ -11,7 +11,7 @@ class MyDocument extends Document {
           {/* Cover Image */}
           <meta
             property="og:image"
-            content="/your-cover-image.jpg" // Replace with the actual path to your cover image
+            content="/assets/cover-image.png" // Replace with the actual path to your cover image
           />
 
           {/* Other meta tags */}
