@@ -12,9 +12,23 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ProfileSection = () => {
   return (
-    <Flex align="center" justify="center" height="60vh">
-      {/* Left Column: Photo and Icons */}
-      <Flex direction="column" align="center" justify="center" flex="2">
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      align={{ base: "center", md: "center" }} // Center on mobile, center on larger screens
+      justify="center"
+      height="60vh"
+      p={{ base: 4, md: 0 }}
+      mb={{ base: 20, md: 0 }} // Add more bottom margin on mobile
+      mt={{ base: 16, md: 0 }} // Add more bottom margin on mobile
+    >
+      {/* Left Column */}
+      <Flex
+        direction="column"
+        align="center"
+        justify="center"
+        flex={{ base: "none", md: 2 }} // Prevents it from growing in mobile
+        mb={{ base: 4, md: 0 }} // Adds margin to bottom in mobile
+      >
         <Box
           width="200px"
           height="200px"
@@ -80,8 +94,7 @@ const ProfileSection = () => {
         </HStack>
       </Flex>
 
-      {/* Right Column: Text */}
-      <Box flex="8" ml={8}>
+      <Box flex={{ base: 1, md: 8 }} ml={{ base: 0, md: 8 }}>
         <Heading as="h1" size="xl" mb={4}>
           <span className="wave" role="img" aria-label="Waving Hand">
             👋
@@ -105,7 +118,6 @@ const ProfileSection = () => {
           </Box>
         </Text>
 
-        {/* Purple Section */}
         <Text mt={4} fontSize="md" color="#6B46C1">
           <Box as="span" fontWeight="bold">
             TL;DR:
@@ -115,7 +127,6 @@ const ProfileSection = () => {
           going full-force on something new.
         </Text>
 
-        {/* Gray Section */}
         <Text fontSize="xs" color="gray.500" mt={4}>
           Press:{" "}
           <Link
