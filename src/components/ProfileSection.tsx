@@ -6,11 +6,30 @@ import {
   IconButton,
   Link,
   Text,
+  useColorMode,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ProfileSection = () => {
+  const { colorMode } = useColorMode();
+
+  const profileSectionStyles = {
+    color: colorMode === "light" ? "black" : "white",
+  };
+
+  const iconButtonStyles = {
+    _hover: {
+      color: colorMode === "light" ? "teal" : "white",
+      position: "relative",
+      top: "-2px",
+    },
+  };
+
+  const linkStyles = {
+    color: colorMode === "light" ? "#6B46C1" : "white",
+  };
+
   return (
     <Flex
       direction={{ base: "column", md: "row" }}
@@ -20,6 +39,7 @@ const ProfileSection = () => {
       p={{ base: 4, md: 0 }}
       mb={{ base: 20, md: 0 }} // Add more bottom margin on mobile
       mt={{ base: 16, md: 0 }} // Add more bottom margin on mobile
+      {...profileSectionStyles}
     >
       {/* Left Column */}
       <Flex

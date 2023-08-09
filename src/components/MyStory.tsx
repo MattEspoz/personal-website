@@ -1,8 +1,29 @@
-import { Box, Link as ChakraLink, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Link as ChakraLink,
+  Heading,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 
 const MyStorySection = () => {
+  const { colorMode } = useColorMode();
+
+  const myStorySectionStyles = {
+    color: colorMode === "light" ? "black" : "white",
+  };
+
+  const linkStyles = {
+    color: colorMode === "light" ? "teal" : "white",
+    _hover: {
+      color: colorMode === "light" ? "purple" : "white",
+      position: "relative",
+      top: "-2px",
+    },
+  };
+
   return (
-    <Box py={8}>
+    <Box py={8} {...myStorySectionStyles}>
       <Box>
         <Heading as="h1" size="lg" mb={4}>
           <Box

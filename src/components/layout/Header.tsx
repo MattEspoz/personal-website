@@ -41,6 +41,14 @@ const Header = () => {
     };
   }, []);
 
+  const headerStyles = {
+    bg: colorMode === "light" ? "transparent" : "#020301",
+    color: colorMode === "light" ? "black" : "white",
+    _hover: {
+      bg: colorMode === "light" ? "white" : "#020301",
+    },
+  };
+
   return (
     <Box
       textAlign="center"
@@ -49,14 +57,14 @@ const Header = () => {
       position={isSticky ? "sticky" : "static"}
       top={0}
       zIndex={isSticky ? "sticky" : "auto"}
-      bg="transparent"
+      {...headerStyles}
     >
       <UpdateBanner />
       <Flex
         as="header"
         align="center"
         p={4}
-        bg={isSticky ? "white" : "transparent"}
+        bg={isSticky ? headerStyles._hover.bg : headerStyles.bg} // Adjust the background color here
         boxShadow={isSticky ? "md" : "none"}
       >
         <Flex direction="row" alignItems="center">
@@ -112,7 +120,13 @@ const Header = () => {
           {/* Toggle dark mode */}
           <IconButton
             aria-label="Toggle Dark Mode"
-            icon={colorMode === "light" ? <FiMoon /> : <FiSun />}
+            icon={
+              colorMode === "light" ? (
+                <FiMoon color="#6B46C1" fill="#6B46C1" />
+              ) : (
+                <FiSun color="#6B46C1" fill="#6B46C1" />
+              )
+            }
             onClick={handleToggleColorMode} // Use the custom handler
           />
         </Box>

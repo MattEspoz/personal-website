@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   Text,
+  useColorMode,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
@@ -27,6 +28,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   githubUrl,
   tag,
 }) => {
+  const { colorMode } = useColorMode();
+
   const tagColors: { [key: string]: string } = {
     "Personal Project": "linear-gradient(to right, #9EFF9C, #9AFEDC)",
     Stealth: "linear-gradient(to right, #D3A4FF, #F2A5FD)",
@@ -41,6 +44,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   const backgroundGradient = tagColors[tag] || "transparent";
   const textColor = tagTextColor[tag] || "black";
+
+  const descriptionTextColor = colorMode === "light" ? "black" : "gray.400"; // Adjust the description text color
+  const githubButtonColor = colorMode === "light" ? "#334254" : "white"; // Adjust the Github button color
+  const githubButtonHoverColor = colorMode === "light" ? "#2D3848" : "black"; // Adjust the Github button hover color
 
   return (
     <Card width="100%" borderRadius="lg" overflow="hidden">
@@ -84,7 +91,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <Heading as="h4" size="md" mb={2}>
           {title}
         </Heading>
-        <Text fontSize="sm" color="gray.600" mb={3}>
+        <Text fontSize="sm" color={descriptionTextColor} mb={3}>
           {description}
         </Text>
         <Flex justify="flex-start" align="center">
@@ -118,8 +125,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <Button
                 size="xs"
                 colorScheme="white"
-                bg="#475668"
-                _hover={{ bg: "#2D3848", color: "white" }}
+                bg={githubButtonColor}
+                _hover={{ bg: githubButtonHoverColor, color: "white" }}
                 leftIcon={<FaGithub />} // Github icon
               >
                 Github
