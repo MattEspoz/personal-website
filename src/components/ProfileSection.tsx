@@ -18,14 +18,6 @@ const ProfileSection = () => {
     color: colorMode === "light" ? "black" : "white",
   };
 
-  const iconButtonStyles = {
-    _hover: {
-      color: colorMode === "light" ? "teal" : "white",
-      position: "relative",
-      top: "-2px",
-    },
-  };
-
   const linkStyles = {
     color: colorMode === "light" ? "#6B46C1" : "white",
   };
@@ -33,12 +25,12 @@ const ProfileSection = () => {
   return (
     <Flex
       direction={{ base: "column", md: "row" }}
-      align={{ base: "center", md: "center" }} // Center on mobile, center on larger screens
+      align={{ base: "center", md: "center" }}
       justify="center"
-      height="60vh"
+      height={{ base: "auto", md: "60vh" }} // Change height for smaller screens
       p={{ base: 4, md: 0 }}
-      mb={{ base: 20, md: 0 }} // Add more bottom margin on mobile
-      mt={{ base: 16, md: 0 }} // Add more bottom margin on mobile
+      mb={{ base: 8, md: 0 }} // Adjust bottom margin for smaller screens
+      mt={{ base: 8, md: 0 }} // Adjust bottom margin for smaller screens
       {...profileSectionStyles}
     >
       {/* Left Column */}
@@ -46,8 +38,8 @@ const ProfileSection = () => {
         direction="column"
         align="center"
         justify="center"
-        flex={{ base: "none", md: 2 }} // Prevents it from growing in mobile
-        mb={{ base: 4, md: 0 }} // Adds margin to bottom in mobile
+        flex={{ base: "none", md: 2 }}
+        mb={{ base: 4, md: 0 }}
       >
         <Box
           width="200px"
