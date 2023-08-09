@@ -12,7 +12,20 @@ export default function Home() {
     <div className="container">
       <Head>
         <title> Matt Espinoza // @mattespoz</title>
-        <meta name="description" content="Welcome to my personal website" />
+        <meta
+          name="description"
+          content="Hi, I'm Matt. Welcome to my corner of the internet"
+        />
+        <meta property="og:title" content="Matt Espinoza // @mattespoz" />
+        <meta
+          property="og:description"
+          content="Hi, I'm Matt. Welcome to my corner of the internet"
+        />
+        <meta property="og:image" content="/assets/cover-image.png" />{" "}
+        {/* Replace with actual URL */}
+        <meta property="og:url" content="/assets/cover-image.png" />{" "}
+        {/* Replace with actual URL */}
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ProfileSection />
