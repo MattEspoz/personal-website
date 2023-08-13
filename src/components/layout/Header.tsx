@@ -17,10 +17,10 @@ const Header = () => {
   const handleToggleColorMode = () => {
     if (colorMode === "light") {
       document.body.style.backgroundImage =
-        "url('/assets/background-dark.png')";
+        "url('/assets/background-light.png')";
     } else {
       document.body.style.backgroundImage =
-        "url('/assets/background-light.png')";
+        "url('/assets/background-dark.png')";
     }
     toggleColorMode();
   };

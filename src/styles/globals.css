@@ -6,7 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --background-image: url("/assets/background-light.png");
+  --background-image-light: url("/assets/background-light.png");
+  --background-image-dark: url("/assets/background-dark.png");
 }
 body {
   margin: 0;
@@ -27,10 +28,18 @@ body {
 }
 
 body.background-image {
-  background-image: url("/assets/background-light.png");
+  background-image: var(
+    --background-image-light
+  ); /* Use light background by default */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+body[data-color-mode="dark"].background-image {
+  background-image: var(
+    --background-image-dark
+  ); /* Use dark background for dark mode */
 }
 
 .container {
