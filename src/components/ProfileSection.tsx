@@ -11,6 +11,7 @@ import {
 import Image from "next/image";
 import React, { useState } from "react";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import CalloutButton from "./CalloutButton";
 
 const ProfileSection = () => {
   const { colorMode } = useColorMode();
@@ -217,6 +218,11 @@ const ProfileSection = () => {
             CUTC
           </Link>{" "}
         </Text>
+
+        <CalloutButton
+          link="https://compound.beehiiv.com/p/july-2023"
+          text="Latest July Updates has been posted. "
+        />
       </Box>
 
       <style jsx>{`
