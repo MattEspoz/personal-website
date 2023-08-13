@@ -4,32 +4,29 @@ import Header from "@/components/layout/Header";
 import UpdateBanner from "@/components/layout/UpdateBanner";
 import "@/styles/globals.css";
 import theme from "@/styles/theme";
-import { ChakraProvider, useColorMode } from "@chakra-ui/react";
+import { CSSReset, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
-import React, { useEffect } from "react";
+import React from "react";
+
+const extendedTheme = extendTheme({
+  ...theme,
+  config: {
+    initialColorMode: "light", // Set initial color mode to "light"
+    useSystemColorMode: false,
+  },
+});
 
 export default function App({ Component, pageProps }: AppProps) {
-  const { colorMode } = useColorMode();
-
-  useEffect(() => {
-    document.body.classList.add("background-image");
-    return () => {
-      document.body.classList.remove("background-image");
-    };
-  }, [colorMode]); // Re-run the effect when colorMode changes
-
   return (
-    <>
-      <ChakraProvider theme={theme}>
-        <div className="container">
-          {/* <UpdateBanner /> */}
-          <Header />
-          <Component {...pageProps} />
+    <ChakraProvider theme={extendedTheme}>
+      <div className="container">
+        {/* <UpdateBanner /> */}
+        <Header />
+        <Component {...pageProps} />
 
-          <HorizontalLine />
-          <Footer />
-        </div>
-      </ChakraProvider>
-    </>
+        <HorizontalLine />
+        <Footer />
+      </div>
+    </ChakraProvider>
   );
 }
