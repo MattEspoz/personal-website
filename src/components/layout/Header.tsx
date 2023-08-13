@@ -36,7 +36,7 @@ const Header = () => {
         document.body.style.backgroundImage =
           "url('/assets/background-dark.png')";
       }
-    }, 1000); // 1000 milliseconds = 1 second
+    }, 10000); // 1000 milliseconds = 1 second
 
     return () => clearTimeout(timeoutId);
   }, []);
