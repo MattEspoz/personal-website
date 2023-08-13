@@ -8,12 +8,11 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { FiMail, FiMenu, FiMoon, FiSun, FiTwitter } from "react-icons/fi";
+import { FiMail, FiMoon, FiSun, FiTwitter } from "react-icons/fi";
 import UpdateBanner from "./UpdateBanner";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const [isSticky, setIsSticky] = useState(false);
 
   const handleToggleColorMode = () => {
     if (colorMode === "light") {
@@ -37,24 +36,15 @@ const Header = () => {
     }
   }, []);
 
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const headerBg =
+    colorMode === "light"
+      ? "rgba(255, 255, 255, 0.8)" // Semi-transparent white
+      : "rgba(9, 14, 17, 0.8)"; // Semi-transparent dark
 
   const headerStyles = {
-    bg: colorMode === "light" ? "transparent" : "#020301",
+    bg: headerBg,
     color: colorMode === "light" ? "black" : "white",
+    borderRadius: "10px",
     _hover: {
       bg: colorMode === "light" ? "white" : "#020301",
     },
@@ -62,21 +52,22 @@ const Header = () => {
 
   return (
     <Box
+      mt={4}
       textAlign="center"
       fontSize="sm"
       fontWeight="bold"
-      position={isSticky ? "sticky" : "static"}
+      position="sticky"
       top={0}
-      zIndex={isSticky ? "sticky" : "auto"}
+      zIndex="sticky"
       {...headerStyles}
     >
-      <UpdateBanner />
       <Flex
         as="header"
         align="center"
         p={4}
-        bg={isSticky ? headerStyles._hover.bg : headerStyles.bg} // Adjust the background color here
-        boxShadow={isSticky ? "md" : "none"}
+        bg={headerStyles.bg}
+        boxShadow="md"
+        borderRadius="10px"
       >
         <Flex direction="row" alignItems="center">
           {/* Your logo or brand */}
@@ -138,7 +129,7 @@ const Header = () => {
                 <FiSun color="#6B46C1" fill="#6B46C1" />
               )
             }
-            onClick={handleToggleColorMode} // Use the custom handler
+            onClick={handleToggleColorMode}
           />
         </Box>
       </Flex>

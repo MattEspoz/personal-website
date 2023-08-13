@@ -7,9 +7,12 @@ const UpdateBanner = () => {
       bg="teal.500"
       color="white"
       py={3}
+      px={4} // Add horizontal padding
       textAlign="center"
       fontSize="sm"
       fontWeight="bold"
+      borderRadius="20px" // Add rounded edges
+      margin="0 60px" // Add margins on the left and right sides
     >
       <Flex align="center" justify="center">
         <Box as={FiAlertCircle} mr={1} />

@@ -21,6 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <ChakraProvider theme={theme}>
         <div className="container">
+          {/* <UpdateBanner /> */}
           <Header />
           <HorizontalLine />
           <Component {...pageProps} />
