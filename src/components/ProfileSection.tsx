@@ -33,8 +33,12 @@ const ProfileSection = () => {
       justify="center"
       height={{ base: "auto", md: "60vh" }} // Change height for smaller screens
       p={{ base: 4, md: 0 }}
-      mb={{ base: 8, md: 0 }} // Adjust bottom margin for smaller screens
-      mt={{ base: 8, md: 0 }} // Adjust bottom margin for smaller screens
+      mb={{ base: 8, md: 0, lg: "20px" }} // Adjust bottom margin for smaller screens
+      mt={{
+        base: 8,
+        md: 0,
+        lg: "20px", // Set a maximum margin value for larger screens
+      }}
       {...profileSectionStyles}
     >
       {/* Left Column */}
@@ -49,7 +53,6 @@ const ProfileSection = () => {
           style={{
             width: "200px",
             height: "200px",
-            borderRadius: "50%",
             boxShadow: "lg",
             overflow: "hidden",
             position: "relative",
@@ -126,7 +129,20 @@ const ProfileSection = () => {
         </HStack>
       </Flex>
 
-      <Box flex={{ base: 1, md: 8 }} ml={{ base: 0, md: 8 }}>
+      <Box
+        flex={{ base: 1, md: 8 }}
+        ml={{ base: 0, md: "lg" }}
+        mt={{
+          base: "lg",
+          md: "16px",
+          lg: "16px", // Set a maximum margin value for larger screens
+        }}
+        mb={{
+          base: "16px",
+          md: "24px",
+          lg: "48px", // Set a maximum margin value for larger screens
+        }}
+      >
         <Heading as="h1" size="xl" mb={4}>
           <span className="wave" role="img" aria-label="Waving Hand">
             👋

@@ -31,6 +31,14 @@ const theme = extendTheme({
     xl: "32px",
     "2xl": "64px",
   },
+
+  space: {
+    xs: "0.25rem",
+    sm: "0.5rem",
+    md: "1rem",
+    lg: "1.5rem",
+    xl: "2rem",
+  },
 });
 
 export default theme as ChakraTheme; // Export your custom theme with the correct type
