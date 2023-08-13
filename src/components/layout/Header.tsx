@@ -51,7 +51,7 @@ const Header = () => {
     },
   };
 
-  // console.log(colorMode === "light" ? "light" : "dark");
+  console.log(colorMode === "light" ? "light" : "dark");
 
   return (
     <Box
