@@ -26,6 +26,17 @@ const Header = () => {
     toggleColorMode();
   };
 
+  // Set initial background image based on initial colorMode
+  useEffect(() => {
+    if (colorMode === "light") {
+      document.body.style.backgroundImage =
+        "url('/assets/background-dark.png')";
+    } else {
+      document.body.style.backgroundImage =
+        "url('/assets/background-light.png')";
+    }
+  }, []);
+
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsSticky(true);
