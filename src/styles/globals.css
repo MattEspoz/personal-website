@@ -34,7 +34,7 @@ body.background-image {
 }
 
 .container {
-  max-width: 720px; /* Adjust this value as per your preference */
+  max-width: 750px; /* Adjust this value as per your preference */
   margin: 0 auto;
   padding: 0 16px; /* Adjust the horizontal padding as needed */
 }
