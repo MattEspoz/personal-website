@@ -9,6 +9,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import React, { useState } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
@@ -29,6 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   tag,
 }) => {
   const { colorMode } = useColorMode();
+  const [isHovered, setIsHovered] = useState(false);
 
   const tagColors: { [key: string]: string } = {
     "Personal Project": "linear-gradient(to right, #9EFF9C, #9AFEDC)",
@@ -50,7 +52,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const githubButtonHoverColor = colorMode === "light" ? "#2D3848" : "black"; // Adjust the Github button hover color
 
   return (
-    <Card width="100%" borderRadius="lg" overflow="hidden">
+    <Card
+      className="project-card"
+      width="100%"
+      borderRadius="lg"
+      overflow="hidden"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Box position="relative">
         {/* Tag on top corner */}
         <Text

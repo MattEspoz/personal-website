@@ -57,7 +57,7 @@ const Projects = () => {
             imageUrl="/projects/P5-Solana.png"
             demoUrl="https://solana-gif-marketplace.vercel.app/"
             githubUrl="https://github.com/MattEspoz/solana-gif-marketplace"
-            tag="Personal Project"
+            tag="Stealth"
           />
         </Box>
       </Flex>

@@ -10,10 +10,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url("/assets/background-light.png");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Optional, keeps the background fixed while scrolling */
+}
+
+.project-card {
+  transition: transform 0.3s ease; /* Add a smooth animation to the transform property */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Move the card up slightly when hovered */
+}
+
+body.background-image {
+  background-image: url("/assets/background-light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {

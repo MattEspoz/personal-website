@@ -9,10 +9,13 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import React, { useState } from "react";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ProfileSection = () => {
   const { colorMode } = useColorMode();
+
+  const [isHovered, setIsHovered] = useState(false); // Add this line
 
   const profileSectionStyles = {
     color: colorMode === "light" ? "black" : "white",
@@ -41,22 +44,38 @@ const ProfileSection = () => {
         flex={{ base: "none", md: 2 }}
         mb={{ base: 4, md: 0 }}
       >
-        <Box
-          width="200px"
-          height="200px"
-          borderRadius="50%"
-          boxShadow="lg"
-          overflow="hidden"
-          position="relative"
+        <div
+          style={{
+            width: "200px",
+            height: "200px",
+            borderRadius: "50%",
+            boxShadow: "lg",
+            overflow: "hidden",
+            position: "relative",
+            transform: isHovered ? "translateY(-5px)" : "none", // Apply the same transform effect
+            transition: "transform 0.3s ease", // Apply the same transition duration and easing
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
           className="profile-image"
         >
-          <Image
-            src="/assets/main.jpeg"
-            alt="Matt's Profile"
-            layout="fill"
-            objectFit="cover"
-          />
-        </Box>
+          <Box
+            width="200px"
+            height="200px"
+            borderRadius="50%"
+            boxShadow="lg"
+            overflow="hidden"
+            position="relative"
+            className="profile-image"
+          >
+            <Image
+              src="/assets/main.jpeg"
+              alt="Matt's Profile"
+              layout="fill"
+              objectFit="cover"
+            />
+          </Box>
+        </div>
         <HStack mt={4} spacing={2}>
           <IconButton
             aria-label="Instagram"

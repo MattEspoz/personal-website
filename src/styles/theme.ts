@@ -4,8 +4,8 @@ import { ChakraTheme, extendTheme } from "@chakra-ui/react";
 // Define your custom theme as you did before
 const theme = extendTheme({
   fonts: {
-    body: "Inter, sans-serif",
-    heading: "Inter, sans-serif",
+    body: "Poppins, Inter, sans-serif", // Change "Inter" to "Poppins"
+    heading: "Poppins, Inter, sans-serif", // Change "Inter" to "Poppins"
   },
   colors: {
     primary: {
