@@ -52,7 +52,7 @@ const Header = () => {
 
   return (
     <Box
-      mt={4}
+      mt={10}
       textAlign="center"
       fontSize="sm"
       fontWeight="bold"

@@ -28,7 +28,11 @@ const MyStorySection = () => {
         <Heading as="h1" size="lg" mb={4}>
           <Box
             as="span"
-            bgGradient="linear(to-r, #6B46C1, #205AD5)"
+            bgGradient={
+              colorMode === "light"
+                ? "linear(to-r, #6B46C1, #205AD5)"
+                : "linear(to-r, #A78BFA, #9F7AEA)" // Adjust the color values as needed
+            }
             bgClip="text"
             display="inline"
           >

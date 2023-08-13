@@ -133,7 +133,11 @@ const ProfileSection = () => {
           </span>{" "}
           <Box
             as="span"
-            bgGradient="linear(to-r, #6B46C1, #205AD5)"
+            bgGradient={
+              colorMode === "light"
+                ? "linear(to-r, #6B46C1, #205AD5)"
+                : "linear(to-r, #A78BFA, #9F7AEA)" // Adjust the color values as needed
+            }
             bgClip="text"
             display="inline"
           >
@@ -150,7 +154,11 @@ const ProfileSection = () => {
           </Box>
         </Text>
 
-        <Text mt={4} fontSize="md" color="#6B46C1">
+        <Text
+          mt={4}
+          fontSize="md"
+          color={colorMode === "light" ? "#6B46C1" : "#A78BFA"} // Adjust the color values as needed
+        >
           <Box as="span" fontWeight="bold">
             TL;DR:
           </Box>{" "}

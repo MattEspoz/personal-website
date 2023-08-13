@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   const descriptionTextColor = colorMode === "light" ? "black" : "gray.400"; // Adjust the description text color
   const githubButtonColor = colorMode === "light" ? "#334254" : "white"; // Adjust the Github button color
-  const githubButtonHoverColor = colorMode === "light" ? "#2D3848" : "black"; // Adjust the Github button hover color
+  const githubButtonHoverColor = colorMode === "light" ? "black" : "black"; // Adjust the Github button hover color
 
   return (
     <Card

@@ -23,7 +23,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <div className="container">
           {/* <UpdateBanner /> */}
           <Header />
-          <HorizontalLine />
           <Component {...pageProps} />
 
           <HorizontalLine />

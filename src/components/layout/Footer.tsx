@@ -1,7 +1,9 @@
+import { useColorMode } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import HorizontalLine from "../HorizontalLine";
 
 const Footer = () => {
+  const { colorMode } = useColorMode();
   const [lastUpdated, setLastUpdated] = useState("");
   const [emoji, setEmoji] = useState("🔮");
 
@@ -38,13 +40,35 @@ const Footer = () => {
       <div className="footer-container">
         <div className="left-content">
           {/* Updated: October 2022 */}
-          <p className="updated">{`Updated: ${lastUpdated}`}</p>
+          <p
+            className="updated"
+            style={{
+              color: colorMode === "light" ? "gray.500" : "#718196",
+            }}
+          >
+            {`Updated: ${lastUpdated}`}
+          </p>
         </div>
+
         <div className="right-content">
           {/* My Life Updates 📭 ↗ */}
-          <p className="my-updates" onClick={handleMyUpdatesClick}>
+          <p
+            className="my-updates"
+            onClick={handleMyUpdatesClick}
+            style={{
+              color: colorMode === "light" ? "#6B46C1" : "#A78BFA",
+              // Add more styles as needed
+            }}
+          >
             <u>My Life Updates</u> 📭 ↗<br />
-            <span>(read by 2,000+ people)</span>
+            <span
+              style={{
+                color: colorMode === "light" ? "gray.500" : "#718196",
+                // Add more styles as needed
+              }}
+            >
+              (read by 2,000+ people)
+            </span>
           </p>
         </div>
       </div>
@@ -60,7 +84,15 @@ const Footer = () => {
         {emoji}
       </p>
 
-      <p className="designed">© Designed and built by Matt Espinoza</p>
+      <p
+        style={{
+          color: colorMode === "light" ? "gray.500" : "#718196",
+          // Add more styles as needed
+        }}
+        className="designed"
+      >
+        © Designed and built by Matt Espinoza
+      </p>
 
       <style jsx>{`
         .footer-container {
