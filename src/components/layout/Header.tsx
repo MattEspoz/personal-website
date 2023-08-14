@@ -28,17 +28,13 @@ const Header = () => {
 
   // Set initial background image based on initial colorMode
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      if (colorMode === "light") {
-        document.body.style.backgroundImage =
-          "url('/assets/background-light.png')";
-      } else {
-        document.body.style.backgroundImage =
-          "url('/assets/background-dark.png')";
-      }
-    }, 10000); // 1000 milliseconds = 1 second
-
-    return () => clearTimeout(timeoutId);
+    if (colorMode === "light") {
+      document.body.style.backgroundImage =
+        "url('/assets/background-light.png')";
+    } else {
+      document.body.style.backgroundImage =
+        "url('/assets/background-dark.png')";
+    }
   }, []);
 
   const headerBg =
