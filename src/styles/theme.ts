@@ -34,7 +34,6 @@ const theme = extendTheme({
 
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundPosition: "left center",
         backgroundAttachment: "fixed",
       },
     }),
