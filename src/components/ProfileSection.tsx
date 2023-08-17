@@ -31,7 +31,7 @@ const ProfileSection = () => {
       direction={{ base: "column", md: "row" }}
       align={{ base: "center", md: "center" }}
       justify="center"
-      height={{ base: "auto", md: "60vh" }} // Change height for smaller screens
+      maxHeight={{ base: "auto", md: "75vh", lg: "90vh" }}
       p={{ base: 4, md: 0 }}
       mb={{ base: 8, md: 0, lg: "20px" }} // Adjust bottom margin for smaller screens
       mt={{
