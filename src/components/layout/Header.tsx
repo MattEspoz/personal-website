@@ -8,6 +8,7 @@ import {
   Spacer,
   useColorMode,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 import React, { useEffect, useState } from "react";
 import { FiMail, FiMoon, FiSun, FiTwitter } from "react-icons/fi";
 import UpdateBanner from "./UpdateBanner";
@@ -26,16 +27,16 @@ const Header = () => {
     toggleColorMode();
   };
 
-  // Set initial background image based on initial colorMode
-  useEffect(() => {
-    if (colorMode === "light") {
-      document.body.style.backgroundImage =
-        "url('/assets/background-light.png')";
-    } else {
-      document.body.style.backgroundImage =
-        "url('/assets/background-dark.png')";
-    }
-  }, []);
+  // // Set initial background image based on initial colorMode
+  // useEffect(() => {
+  //   if (colorMode === "light") {
+  //     document.body.style.backgroundImage =
+  //       "url('/assets/background-light.png')";
+  //   } else {
+  //     document.body.style.backgroundImage =
+  //       "url('/assets/background-dark.png')";
+  //   }
+  // }, []);
 
   const headerBg =
     colorMode === "light"
@@ -50,8 +51,6 @@ const Header = () => {
       bg: colorMode === "light" ? "white" : "#020301",
     },
   };
-
-  console.log(colorMode === "light" ? "light" : "dark");
 
   return (
     <Box
@@ -74,9 +73,18 @@ const Header = () => {
       >
         <Flex direction="row" alignItems="center">
           {/* Your logo or brand */}
-          <Heading fontSize="xl" fontWeight="bold">
-            Matt Espinoza ✦
-          </Heading>
+          <NextLink href="/" passHref>
+            <Link
+              as="a"
+              fontSize="xl"
+              fontWeight="bold"
+              _hover={{
+                textDecoration: "none",
+              }}
+            >
+              Matt Espinoza ✦
+            </Link>
+          </NextLink>
           <Link
             href="https://www.twitter.com/mattespoz"
             fontSize="sm"

@@ -1,5 +1,9 @@
-// styles/theme.ts
 import { ChakraTheme, extendTheme } from "@chakra-ui/react";
+
+type GlobalStyleProps = {
+  colorMode: "light" | "dark";
+  // Add other properties you might use here
+};
 
 // Define your custom theme as you did before
 const theme = extendTheme({
@@ -20,13 +24,20 @@ const theme = extendTheme({
     // Add other color modes and colors here
   },
   styles: {
-    global: {
+    global: (props: GlobalStyleProps) => ({
       body: {
-        bg: "primary.100",
+        backgroundImage:
+          props.colorMode === "light"
+            ? 'url("/assets/background-light.png")'
+            : 'url("/assets/background-dark.png")',
         color: "gray.800",
+
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       },
-    },
+    }),
   },
+
   blur: {
     // Define your blur styles here
     xs: "2px",
