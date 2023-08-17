@@ -31,7 +31,7 @@ const NotFoundPage = () => {
         </Box>
       </Heading>
       <Text color={colorMode === "dark" ? "white" : "inherit"}>
-        Hmmm wierd, can't find that page. Head back to the{" "}
+        Hmmm wierd, can&rsquo;t find that page. Head back to the{" "}
         <NextLink href="/" passHref>
           <Link color="purple.500" fontWeight="bold">
             homepage ☄️
