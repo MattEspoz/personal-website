@@ -245,7 +245,7 @@ const ProfileSection = () => {
 
         <CalloutButton
           link="https://compound.beehiiv.com/p/july-2023"
-          text="Latest July Updates has been posted. "
+          text="My July Updates has been posted. "
         />
       </Box>
 

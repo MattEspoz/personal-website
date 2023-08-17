@@ -101,6 +101,13 @@ const Footer = () => {
           align-items: center;
           padding: 20px;
           border-top: 1px solid #eaeaea;
+
+          @media (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px 0; // Adjust padding for better spacing
+          }
         }
 
         p {
@@ -126,6 +133,10 @@ const Footer = () => {
           color: #6b46c1;
           cursor: pointer; /* Add cursor pointer to indicate it's clickable */
           transition: color 0.2s ease, transform 0.2s ease; /* Add transition for color and transform */
+
+          @media (max-width: 600px) {
+            margin-top: 10px; // Add spacing between elements
+          }
         }
 
         .my-updates:hover {
@@ -151,6 +162,10 @@ const Footer = () => {
           text-align: center;
           font-weight: bold;
           color: #555;
+
+          @media (max-width: 600px) {
+            margin-top: 10px; // Add spacing between elements
+          }
         }
       `}</style>
     </>

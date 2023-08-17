@@ -73,18 +73,17 @@ const Header = () => {
       >
         <Flex direction="row" alignItems="center">
           {/* Your logo or brand */}
-          <NextLink href="/" passHref>
-            <Link
-              as="a"
-              fontSize="xl"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "none",
-              }}
-            >
-              Matt Espinoza ✦
-            </Link>
-          </NextLink>
+          <Link
+            as="a"
+            href="/"
+            fontSize={{ base: "lg", md: "xl" }} // Define font sizes for different screen sizes
+            fontWeight="bold"
+            _hover={{
+              textDecoration: "none",
+            }}
+          >
+            Matt Espinoza ✦
+          </Link>
           <Link
             href="https://www.twitter.com/mattespoz"
             fontSize="sm"

@@ -13,7 +13,7 @@ const CalloutButton: React.FC<CalloutButtonProps> = ({ link, text }) => {
       color="white"
       py={3}
       textAlign="center"
-      fontSize="sm"
+      fontSize={{ base: "sm", md: "md" }}
       fontWeight="bold"
       borderRadius="10px"
       mt={4} // Adjust margin-top as needed
