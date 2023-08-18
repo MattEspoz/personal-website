@@ -29,7 +29,7 @@ const CalloutButton: React.FC<CalloutButtonProps> = ({ link, text }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read more
+            Read more 🔍
           </Link>
         </Box>
       </Flex>
