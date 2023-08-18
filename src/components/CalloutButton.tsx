@@ -18,10 +18,12 @@ const CalloutButton: React.FC<CalloutButtonProps> = ({ link, text }) => {
       borderRadius="10px"
       mt={4} // Adjust margin-top as needed
     >
-      <Flex align="center" justify="center">
-        <Box as={FiAlertCircle} mr={1} />
-        {text}{" "}
-        <Box as="span" ml={1}>
+      <Flex direction="column" align="center">
+        <Flex align="center">
+          <Box as={FiAlertCircle} size="1.5em" mr={1} />
+          <Box as="span">{text}</Box>
+        </Flex>
+        <Box mt={2}>
           <Link
             color="white"
             textDecoration="underline"
