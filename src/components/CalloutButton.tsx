@@ -1,4 +1,11 @@
-import { Box, Flex, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Link,
+  Stack,
+  useBreakpointValue,
+  useColorMode,
+} from "@chakra-ui/react";
 import { FiAlertCircle } from "react-icons/fi";
 
 interface CalloutButtonProps {
@@ -7,10 +14,16 @@ interface CalloutButtonProps {
 }
 
 const CalloutButton: React.FC<CalloutButtonProps> = ({ link, text }) => {
+  const { colorMode } = useColorMode();
+  const isMobile = useBreakpointValue({ base: true, md: false });
+
+  const buttonBgColor = colorMode === "light" ? "teal.500" : "teal.200";
+  const textColor = colorMode === "light" ? "white" : "green.800"; // Change to dark green color
+
   return (
     <Box
-      bg="teal.500"
-      color="white"
+      bg={buttonBgColor}
+      color={textColor}
       py={3}
       textAlign="center"
       fontSize={{ base: "sm", md: "md" }}
@@ -18,14 +31,14 @@ const CalloutButton: React.FC<CalloutButtonProps> = ({ link, text }) => {
       borderRadius="10px"
       mt={4} // Adjust margin-top as needed
     >
-      <Flex direction="column" align="center">
-        <Flex align="center">
-          <Box as={FiAlertCircle} size="1.5em" mr={1} />
-          <Box as="span">{text}</Box>
-        </Flex>
-        <Box mt={2}>
+      {isMobile ? (
+        <Stack spacing={1} align="center" justify="center">
+          <Flex align="center">
+            <Box as={FiAlertCircle} size="1.5em" mr={1} />
+            <Box as="span">{text}</Box>
+          </Flex>
           <Link
-            color="white"
+            color={textColor}
             textDecoration="underline"
             href={link}
             target="_blank"
@@ -33,8 +46,24 @@ const CalloutButton: React.FC<CalloutButtonProps> = ({ link, text }) => {
           >
             Read more 🔍
           </Link>
-        </Box>
-      </Flex>
+        </Stack>
+      ) : (
+        <Flex align="center" justify="center">
+          <Box as={FiAlertCircle} mr={1} />
+          {text}{" "}
+          <Box as="span" ml={1}>
+            <Link
+              color={textColor}
+              textDecoration="underline"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read more 🔍
+            </Link>
+          </Box>
+        </Flex>
+      )}
     </Box>
   );
 };
