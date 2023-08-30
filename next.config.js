@@ -28,7 +28,7 @@ const nextConfig = {
               value: "life.matthewespinoza.com",
             },
           ],
-          destination: "/tracker/:path*",
+          destination: "/life/:path*",
         },
       ],
     };
