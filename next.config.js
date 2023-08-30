@@ -13,19 +13,24 @@ const nextConfig = {
         destination: "https://compound.beehiiv.com/",
         permanent: true, // Set this to false if you want a temporary redirect
       },
+      {
+        source: "/life",
+        destination: "https://compound.beehiiv.com/",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
     return [
       {
         source: "/:path*",
-        destination: "/tracker/:path*",
-        has: [{ type: "host", value: "tracker.matthewespinoza.com" }],
+        destination: "/life/:path*",
+        has: [{ type: "host", value: "life.matthewespinoza.com" }],
       },
       {
         // fallback
         source: "/:path*",
-        destination: "/tracker/:path*",
+        destination: "/life/:path*",
       },
     ];
   },
