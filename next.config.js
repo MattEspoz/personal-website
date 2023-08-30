@@ -4,7 +4,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/tracker",
+        source: "/",
         destination: "https://compound.super.site/",
         permanent: true,
       },
