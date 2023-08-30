@@ -16,22 +16,18 @@ const nextConfig = {
     ];
   },
   async rewrites() {
-    return {
-      beforeFiles: [
-        // if the host is `app.acme.com`,
-        // this rewrite will be applied
-        {
-          source: "/:path*",
-          has: [
-            {
-              type: "host",
-              value: "life.matthewespinoza.com",
-            },
-          ],
-          destination: "/life/:path*",
-        },
-      ],
-    };
+    return [
+      {
+        source: "/:path*",
+        destination: "/tracker/:path*",
+        has: [{ type: "host", value: "tracker.matthewespinoza.com" }],
+      },
+      {
+        // fallback
+        source: "/:path*",
+        destination: "/tracker/:path*",
+      },
+    ];
   },
 };
 
