@@ -21,7 +21,7 @@ const nextConfig = {
         // if the host is `app.acme.com`,
         // this rewrite will be applied
         {
-          source: "/tracker/:path*",
+          source: "/:path*",
           has: [
             {
               type: "host",
