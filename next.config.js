@@ -25,7 +25,7 @@ const nextConfig = {
           has: [
             {
               type: "host",
-              value: "tracker.matthewespinoza.com",
+              value: "life.matthewespinoza.com",
             },
           ],
           destination: "/tracker/:path*",
