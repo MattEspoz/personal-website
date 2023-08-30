@@ -15,6 +15,24 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return {
+      beforeFiles: [
+        // if the host is `app.acme.com`,
+        // this rewrite will be applied
+        {
+          source: "/tracker/:path*",
+          has: [
+            {
+              type: "host",
+              value: "tracker.matthewespinoza.com",
+            },
+          ],
+          destination: "/tracker/:path*",
+        },
+      ],
+    };
+  },
 };
 
 module.exports = nextConfig;
