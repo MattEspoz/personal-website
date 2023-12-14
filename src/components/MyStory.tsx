@@ -222,7 +222,7 @@ const MyStorySection = () => {
           </ChakraLink>
           ,{" "}
           <ChakraLink
-            href="https://www.socratica.com/"
+            href="https://www.socratica.info/"
             isExternal
             textDecoration="underline"
             _hover={{
@@ -244,7 +244,7 @@ const MyStorySection = () => {
               top: "-2px",
             }}
           >
-            Safary Club
+            Neo
           </ChakraLink>
           , and{" "}
           <ChakraLink

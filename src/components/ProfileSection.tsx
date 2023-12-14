@@ -73,7 +73,7 @@ const ProfileSection = () => {
             className="profile-image"
           >
             <Image
-              src="/assets/main.jpeg"
+              src="/assets/main.jpg"
               alt="Matt's Profile"
               layout="fill"
               objectFit="cover"
