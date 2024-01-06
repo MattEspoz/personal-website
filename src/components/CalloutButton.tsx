@@ -17,8 +17,8 @@ const CalloutButton: React.FC<CalloutButtonProps> = ({ link, text }) => {
   const { colorMode } = useColorMode();
   const isMobile = useBreakpointValue({ base: true, md: false });
 
-  const buttonBgColor = colorMode === "light" ? "teal.500" : "teal.200";
-  const textColor = colorMode === "light" ? "white" : "green.800"; // Change to dark green color
+  const buttonBgColor = colorMode === "light" ? "#6B46C1" : "#A78BFA";
+  const textColor = colorMode === "light" ? "white" : "purple.800"; // Change to dark green color
 
   return (
     <Box
