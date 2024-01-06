@@ -92,7 +92,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <Heading as="h4" size="md" mb={2}>
             {title}
           </Heading>
-          <Text fontSize="md" color={descriptionTextColor} mb={3}>
+          <Text fontSize="sm" color={descriptionTextColor} mb={3}>
             {description}
           </Text>
         </CardBody>
