@@ -28,7 +28,7 @@ const Projects = () => {
         <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
           <ProjectCard
             title="Agora Labs (acq.)"
-            description="Token-gate and reward early supporters."
+            description="Token-gate and reward early supporters"
             demoUrl="https://www.agoralabs.xyz/"
             tag="Featured"
           />
@@ -36,13 +36,13 @@ const Projects = () => {
         <Box flex="1" mb={6}>
           <ProjectCard
             title="Ghostmode"
-            description="AI for building LinkedIn Posts."
+            description="AI for building LinkedIn Posts"
             demoUrl="https://ghostmode.ai/"
             tag="Featured"
           />
         </Box>
       </Flex>
-      <Flex direction={{ base: "column", md: "row" }} mt={5}>
+      <Flex direction={{ base: "column", md: "row" }} mt={3}>
         <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
           <ProjectCard
             title="MatchSync"
