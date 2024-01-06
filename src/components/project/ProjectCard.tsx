@@ -1,32 +1,25 @@
 import {
   Box,
-  Button,
   Card,
   CardBody,
-  Flex,
   Heading,
   Text,
   useColorMode,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import React, { useState } from "react";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  imageUrl: string;
   demoUrl: string;
-  githubUrl?: string; // Optional Github URL prop
   tag: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
-  imageUrl,
   demoUrl,
-  githubUrl,
   tag,
 }) => {
   const { colorMode } = useColorMode();
@@ -47,104 +40,64 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const backgroundGradient = tagColors[tag] || "transparent";
   const textColor = tagTextColor[tag] || "black";
 
-  const descriptionTextColor = colorMode === "light" ? "black" : "gray.400"; // Adjust the description text color
-  const githubButtonColor = colorMode === "light" ? "#334254" : "white"; // Adjust the Github button color
-  const githubButtonHoverColor = colorMode === "light" ? "black" : "black"; // Adjust the Github button hover color
+  const descriptionTextColor = colorMode === "light" ? "gray.500" : "gray.400";
 
   return (
-    <Card
-      className="project-card"
-      width="100%"
-      borderRadius="lg"
-      overflow="hidden"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <a
+      href={demoUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: "none" }}
     >
-      <Box position="relative">
-        {/* Tag on top corner */}
-        <Text
-          position="absolute"
-          top="2"
-          right="2"
-          fontSize="xs"
-          color={textColor}
-          bg={backgroundGradient}
-          borderRadius="md"
-          px={2}
-          py={1}
-          fontWeight="bold"
-          zIndex="1"
-        >
-          {tag}
-        </Text>
-
-        {/* Demo Image */}
-        <a href={demoUrl} target="_blank" rel="noopener noreferrer">
-          <div
-            style={{
-              width: "100%",
-              paddingTop: "75%", // Set to achieve a 4:3 aspect ratio
-              position: "relative",
-            }}
+      <Card
+        className="project-card"
+        width="100%"
+        borderRadius="lg"
+        overflow="hidden"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <Box position="relative">
+          {/* External Link Icon */}
+          <Box
+            position="absolute"
+            top="21.5"
+            right="2"
+            fontSize="xs"
+            color={textColor}
+            zIndex="2"
+            mr={2}
           >
-            <Image
-              src={imageUrl}
-              alt={`${title} Screenshot`}
-              layout="fill" // Fill the container size
-              objectFit="cover" // Maintain aspect ratio and cover the container
-            />
-          </div>
-        </a>
-      </Box>
-      <CardBody>
-        <Heading as="h4" size="md" mb={2}>
-          {title}
-        </Heading>
-        <Text fontSize="sm" color={descriptionTextColor} mb={3}>
-          {description}
-        </Text>
-        <Flex justify="flex-start" align="center">
-          {/* View Demo Button with External Link Icon */}
-          <a
-            href={demoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none" }}
+            <FaExternalLinkAlt />
+          </Box>
+          {/* Tag on top corner */}
+          <Text
+            position="absolute"
+            top="4"
+            right="2"
+            fontSize="xs"
+            color={textColor}
+            bg={backgroundGradient}
+            borderRadius="md"
+            px={2}
+            pr={7}
+            py={1}
+            fontWeight="bold"
+            zIndex="1"
           >
-            <Button
-              size="xs"
-              colorScheme="purple"
-              bg="purple.300"
-              _hover={{ bg: "purple.500", color: "white" }}
-              leftIcon={<FaExternalLinkAlt />} // External link icon
-              mr={2}
-            >
-              View Demo
-            </Button>
-          </a>
-
-          {/* Github Button with Github Icon */}
-          {githubUrl && (
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none" }}
-            >
-              <Button
-                size="xs"
-                colorScheme="white"
-                bg={githubButtonColor}
-                _hover={{ bg: githubButtonHoverColor, color: "white" }}
-                leftIcon={<FaGithub />} // Github icon
-              >
-                Github
-              </Button>
-            </a>
-          )}
-        </Flex>
-      </CardBody>
-    </Card>
+            {tag}
+          </Text>
+        </Box>
+        <CardBody>
+          <Heading as="h4" size="md" mb={2}>
+            {title}
+          </Heading>
+          <Text fontSize="md" color={descriptionTextColor} mb={3}>
+            {description}
+          </Text>
+        </CardBody>
+      </Card>
+    </a>
   );
 };
 

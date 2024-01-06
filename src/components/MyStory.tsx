@@ -14,7 +14,7 @@ const MyStorySection = () => {
   };
 
   const linkStyles = {
-    color: colorMode === "light" ? "teal" : "white",
+    color: colorMode === "light" ? "#9F7AEA" : "white",
     _hover: {
       color: colorMode === "light" ? "purple" : "white",
       position: "relative",
@@ -46,10 +46,9 @@ const MyStorySection = () => {
           It all started with building side projects.
         </Text>
         <Text fontSize="md" mb={4}>
-          I wrote my first line of code in high school, explored basic
-          full-stack & IOS development, participated in hackathons, and secured
-          a handful of SWE internships. Little did I know that this journey
-          would lead me to the realm of startups.
+          I wrote my first line of code in high school, participated in
+          hackathons, and secured a handful of SWE internships. Little did I
+          know that this journey would lead me to the realm of startups.
         </Text>
         <Text fontSize="md" mb={4}>
           Early on, I learned a crucial lesson –{" "}
@@ -59,50 +58,7 @@ const MyStorySection = () => {
           </Text>
         </Text>
         <Text fontSize="md" mb={4}>
-          This philosophy paved the way for individuals to believe in my early
-          potential. From being the inaugural engineer/growth lead at{" "}
-          <ChakraLink
-            href="https://tryvirtually.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "teal",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Virtually
-          </ChakraLink>{" "}
-          during{" "}
-          <ChakraLink
-            href="http://ycombinator.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "teal",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Y Combinator&apos;s 2020 cohort
-          </ChakraLink>
-          , to becoming the youngest engineer at a{" "}
-          <ChakraLink
-            href="http://techstars.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "teal",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Techstars-backed startup
-          </ChakraLink>
-          .
-        </Text>
-        <Text fontSize="md" mb={4}>
-          Amid my exploration in tech, I somehow stumbled into the world of
+          Amid this exploration in tech, I somehow stumbled into the world of
           crypto. First as an investor, and then eventually as a builder. With
           the rise of the web3 social token space, I built{" "}
           <ChakraLink
@@ -110,7 +66,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -128,7 +84,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -141,7 +97,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -154,7 +110,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -167,7 +123,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -181,15 +137,14 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
           >
             Talent Protocol
           </ChakraLink>{" "}
-          in which I lead the charge there on tokenomics as we geared up for the
-          public launch of $TAL.
+          and integrated with their 300K+ userbase.
         </Text>
         <Text fontSize="md" mb={4}>
           Through this journey, I found a sense of belonging by immersing myself
@@ -200,7 +155,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -213,7 +168,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -226,7 +181,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -239,7 +194,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -252,7 +207,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -269,7 +224,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -287,7 +242,7 @@ const MyStorySection = () => {
             isExternal
             textDecoration="underline"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}

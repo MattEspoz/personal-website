@@ -27,42 +27,35 @@ const Projects = () => {
       <Flex direction={{ base: "column", md: "row" }} mt={10}>
         <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
           <ProjectCard
-            title="🥇 Agora Labs (acq.)"
-            description="Platform for web3 creators to token-gate and reward early supporters. Built on DeSo blockchain. Acquired by Talent Protocol."
-            imageUrl="/projects/P1-Agora.png"
+            title="Agora Labs (acq.)"
+            description="Token-gate and reward early supporters."
             demoUrl="https://www.agoralabs.xyz/"
             tag="Featured"
           />
         </Box>
         <Box flex="1" mb={6}>
           <ProjectCard
-            title="🤝 GenQuote"
-            description="Auto-generated Twitter suggestions for posts. Easily connect your account and get ideas for new posts."
-            imageUrl="/projects/P2-GenQuote.png"
-            demoUrl="https://mattespoz.github.io/quote-generator"
-            githubUrl="https://github.com/MattEspoz/quote-generator"
+            title="Ghostmode"
+            description="AI for building LinkedIn Posts."
+            demoUrl="https://ghostmode.ai/"
             tag="Featured"
           />
         </Box>
       </Flex>
-      <Flex direction={{ base: "column", md: "row" }} mt={10}>
+      <Flex direction={{ base: "column", md: "row" }} mt={5}>
         <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
           <ProjectCard
-            title="👱‍♂️ FaceX"
-            description="Full-stack app for detecting faces in photos with sign-in features and mobile responsiveness, using Clarifai API."
-            imageUrl="/projects/P3-FaceX.png"
-            demoUrl="https://solana-gif-marketplace.vercel.app/"
-            githubUrl="https://github.com/MattEspoz/face-recognition-brain"
+            title="MatchSync"
+            description="Find Your Next Co-Founder"
+            demoUrl="https://matchsync.ai/"
             tag="Personal Project"
           />
         </Box>
         <Box flex="1" mb={6}>
           <ProjectCard
-            title="👾 1Solana"
-            description="Minimal Gif Solana marketplace with wallet sign-in, and transaction fees for every GIF added."
-            imageUrl="/projects/P5-Solana.png"
-            demoUrl="https://solana-gif-marketplace.vercel.app/"
-            githubUrl="https://github.com/MattEspoz/solana-gif-marketplace"
+            title="JourneyPlus"
+            description="The First Midjourney-powered Interface"
+            demoUrl="https://www.journeyplus.ai/"
             tag="Stealth"
           />
         </Box>

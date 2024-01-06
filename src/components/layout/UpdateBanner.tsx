@@ -4,7 +4,7 @@ import { FiAlertCircle } from "react-icons/fi";
 const UpdateBanner = () => {
   return (
     <Box
-      bg="teal.500"
+      bg="#9F7AEA"
       color="white"
       py={3}
       px={4} // Add horizontal padding

@@ -91,7 +91,7 @@ const ProfileSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -106,7 +106,7 @@ const ProfileSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -121,7 +121,7 @@ const ProfileSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{
-              color: "teal",
+              color: "#9F7AEA",
               position: "relative",
               top: "-2px",
             }}
@@ -166,7 +166,7 @@ const ProfileSection = () => {
         <Text fontSize="xl">
           I’m a full-stack developer passionate about{" "}
           <Box as="span" fontWeight="bold">
-            building software to <u>reach millions.</u>
+            building software used <u>by millions.</u>
           </Box>
         </Text>
 

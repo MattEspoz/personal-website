@@ -140,7 +140,7 @@ const Footer = () => {
         }
 
         .my-updates:hover {
-          color: teal; /* Change color on hover to teal */
+          color: #9f7aea;
           transform: translateY(-2px); /* Add floating effect on hover */
         }
 

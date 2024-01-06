@@ -91,7 +91,7 @@ const Header = () => {
             ml={2}
             color="gray.500"
             _hover={{
-              color: "teal.500",
+              color: "#9F7AEA",
               textDecoration: "underline",
               transform: "translateY(-2px)",
             }}
@@ -109,7 +109,7 @@ const Header = () => {
               href="https://www.twitter.com/mattespoz"
               mr={2}
               fontWeight="bold"
-              _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
+              _hover={{ color: "#9F7AEA", transform: "translateY(-2px)" }}
               display="flex"
               alignItems="center"
               target="_blank"
@@ -119,7 +119,7 @@ const Header = () => {
             <Link
               href="https://compound.beehiiv.com/"
               fontWeight="bold"
-              _hover={{ color: "teal.500", transform: "translateY(-2px)" }}
+              _hover={{ color: "#9F7AEA", transform: "translateY(-2px)" }}
               display="flex"
               alignItems="center"
               target="_blank"
