@@ -190,7 +190,7 @@ const MyStorySection = () => {
           </ChakraLink>
           ,{" "}
           <ChakraLink
-            href="https://www.safary.club/"
+            href="https://neo.com/"
             isExternal
             textDecoration="underline"
             _hover={{
