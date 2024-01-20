@@ -180,7 +180,8 @@ const ProfileSection = () => {
           </Box>{" "}
           I&apos;m a 21 y/o whose first startup was acquired by a $50m company.
           Since then, built some profitable side projects. Now, I&apos;m
-          building Halation Studio, a holding company.
+          building Halation Studio, a holding co for the next generation of
+          internet companies.
         </Text>
 
         <Text fontSize="xs" color="gray.500" mt={4}>
