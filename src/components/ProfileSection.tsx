@@ -179,8 +179,8 @@ const ProfileSection = () => {
             TL;DR:
           </Box>{" "}
           I&apos;m a 21 y/o whose first startup was acquired by a $50m company.
-          Since then, built a ton of profitable side projects. Today, I&apos;m
-          going full-force on something new.
+          Since then, built some profitable side projects. Now, I&apos;m
+          building Halation Studio, a holding company.
         </Text>
 
         <Text fontSize="xs" color="gray.500" mt={4}>
@@ -244,8 +244,8 @@ const ProfileSection = () => {
         </Text>
 
         <CalloutButton
-          link="https://compound.beehiiv.com/p/july-2023"
-          text="My July Updates has been posted. "
+          link="https://compound.beehiiv.com/p/january-2024"
+          text="My January Updates has been posted. "
         />
       </Box>
 
