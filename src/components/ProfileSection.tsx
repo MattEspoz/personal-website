@@ -179,8 +179,7 @@ const ProfileSection = () => {
             TL;DR:
           </Box>{" "}
           I&apos;m a 21 y/o whose first startup was acquired by a $50m company.
-          Since then, built some profitable side projects. Now, I&apos;m
-          building Halation Studio, a holding co for the next generation of
+          Now, I&apos;m building Halation Studio, a holding company for building & buying
           internet companies.
         </Text>
 
