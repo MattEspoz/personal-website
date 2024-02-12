@@ -21,13 +21,13 @@ export default function Home() {
           property="og:description"
           content="Hi, I'm Matt. Welcome to my corner of the internet"
         />
-        <meta property="og:image" content="/assets/cover-image.png" />{" "}
+        <meta property="og:image" content="/assets/cover-image2.png" />{" "}
         {/* Use the actual path to your image */}
         <meta property="og:image:width" content="1200" />{" "}
         {/* Replace with actual width */}
         <meta property="og:image:height" content="630" />{" "}
         {/* Replace with actual height */}
-        <meta property="og:url" content="URL_TO_YOUR_WEBSITE" />{" "}
+        <meta property="og:url" content="https://matthewespinoza.com/" />{" "}
         {/* Replace with actual URL */}
         <meta property="og:type" content="https://matthewespinoza.com/" />
         <link rel="icon" href="/favicon.ico" />
