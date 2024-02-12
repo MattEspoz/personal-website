@@ -164,14 +164,15 @@ const ProfileSection = () => {
           Welcome to my corner of the internet...
         </Text>
         <Text fontSize="xl">
-          I’m a full-stack developer passionate about{" "}
+          I’m an engineer building a portfolio of next-gen{" "}
           <Box as="span" fontWeight="bold">
-            building software used <u>by millions.</u>
+            software companies used <u>by millions.</u>
           </Box>
         </Text>
 
         <Text
           mt={4}
+          mb={4}
           fontSize="md"
           color={colorMode === "light" ? "#6B46C1" : "#A78BFA"} // Adjust the color values as needed
         >
@@ -179,9 +180,30 @@ const ProfileSection = () => {
             TL;DR:
           </Box>{" "}
           I&apos;m a 21 y/o whose first startup was acquired by a $50m company.
-          Now, I&apos;m building Halation, a holding company for building &
-          buying internet companies.
+          Now, I&apos;m building{" "}
+          <Link
+            href="https://twitter.com/halationco/"
+            isExternal
+            textDecoration="underline"
+          >
+            Halation
+          </Link>
+          , a holding company for building & buying internet companies. I also
+          write life updates 👇
         </Text>
+
+        <iframe
+          src="https://embeds.beehiiv.com/8585a83a-f9e1-4766-80c9-a88f625f65ee?slim=true"
+          data-test-id="beehiiv-embed"
+          height="52"
+          width="100%"
+          scrolling="no"
+          style={{
+            margin: 0,
+            borderRadius: "0px !important",
+            backgroundColor: "transparent",
+          }}
+        ></iframe>
 
         <Text fontSize="xs" color="gray.500" mt={4}>
           Press:{" "}
@@ -242,11 +264,6 @@ const ProfileSection = () => {
             CUTC
           </Link>{" "}
         </Text>
-
-        <CalloutButton
-          link="https://compound.beehiiv.com/p/january-2024"
-          text="My January Updates has been posted. "
-        />
       </Box>
 
       <style jsx>{`
