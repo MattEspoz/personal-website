@@ -87,10 +87,21 @@ const ProfileSection = () => {
           alignItems="center"
           fontWeight="bold"
           fontSize="md"
+          bgGradient={
+            colorMode === "light"
+              ? "linear(to-r, #6B46C1, #205AD5)"
+              : "linear(to-r, #A78BFA, #9F7AEA)" // Adjust the color values as needed
+          }
+          bgClip="text"
         >
           {" "}
           {/* Container for icon and text */}
-          <TiLocation /> {/* Location icon */}
+          <TiLocation
+            style={{
+              color: "#6B46C1",
+            }}
+          />{" "}
+          {/* Location icon */}
           <Box ml={1}>
             {" "}
             {/* Text for location */}
