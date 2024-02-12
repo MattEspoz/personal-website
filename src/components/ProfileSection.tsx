@@ -11,6 +11,7 @@ import {
 import Image from "next/image";
 import React, { useState } from "react";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { TiLocation } from "react-icons/ti";
 import CalloutButton from "./CalloutButton";
 
 const ProfileSection = () => {
@@ -80,7 +81,23 @@ const ProfileSection = () => {
             />
           </Box>
         </div>
-        <HStack mt={4} spacing={2}>
+        <Box
+          mt={4}
+          display="flex"
+          alignItems="center"
+          fontWeight="bold"
+          fontSize="md"
+        >
+          {" "}
+          {/* Container for icon and text */}
+          <TiLocation /> {/* Location icon */}
+          <Box ml={1}>
+            {" "}
+            {/* Text for location */}
+            Canada
+          </Box>
+        </Box>
+        <HStack mt={2} spacing={2}>
           <IconButton
             aria-label="Instagram"
             icon={<FaInstagram />}
@@ -91,7 +108,7 @@ const ProfileSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{
-              color: "#9F7AEA",
+              color: "#604AC4",
               position: "relative",
               top: "-2px",
             }}
@@ -106,7 +123,7 @@ const ProfileSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{
-              color: "#9F7AEA",
+              color: "#604AC4",
               position: "relative",
               top: "-2px",
             }}
@@ -121,7 +138,7 @@ const ProfileSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{
-              color: "#9F7AEA",
+              color: "#604AC4",
               position: "relative",
               top: "-2px",
             }}
