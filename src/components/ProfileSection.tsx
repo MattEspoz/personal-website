@@ -228,7 +228,7 @@ const ProfileSection = () => {
           scrolling="no"
           style={{
             margin: 0,
-            borderRadius: "0px !important",
+            borderRadius: "7px !important",
             backgroundColor: "transparent",
           }}
         ></iframe>

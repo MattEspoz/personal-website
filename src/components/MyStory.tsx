@@ -25,7 +25,7 @@ const MyStorySection = () => {
   return (
     <Box py={8} {...myStorySectionStyles}>
       <Box>
-        <Heading as="h1" size="lg" mb={4}>
+        {/* <Heading as="h1" size="lg" mb={4}>
           <Box
             as="span"
             bgGradient={
@@ -39,28 +39,22 @@ const MyStorySection = () => {
             My Story
           </Box>
         </Heading>
+        
         <Text fontSize="sm" color="gray.500" mt={-3} mb={7}>
           🪄 where it all began...
         </Text>
+        */}
         <Text fontSize="md" mb={4}>
-          It all started with building side projects.
+          Early on, I learned a crucial lesson –
         </Text>
         <Text fontSize="md" mb={4}>
-          I wrote my first line of code in high school, participated in
-          hackathons, and secured a handful of SWE internships. Little did I
-          know that this journey would lead me to the realm of startups.
-        </Text>
-        <Text fontSize="md" mb={4}>
-          Early on, I learned a crucial lesson –{" "}
+          Building side projects leads to{" "}
           <Text as="span" fontWeight="bold">
-            the act of consistently building projects leads to unparalleled
-            avenues of opportunity.
+            unparalleled avenues of opportunity.
           </Text>
         </Text>
         <Text fontSize="md" mb={4}>
-          Amid this exploration in tech, I somehow stumbled into the world of
-          crypto. First as an investor, and then eventually as a builder. With
-          the rise of the web3 social token space, I built{" "}
+          During my first year of University, I built{" "}
           <ChakraLink
             href="https://agoralabs.xyz/"
             isExternal
@@ -73,8 +67,8 @@ const MyStorySection = () => {
           >
             Agora Labs
           </ChakraLink>{" "}
-          — a platform that pioneered the way for creators to connect their
-          tokens and choose specific rewards and perks for their supporters.
+          — a platform that pioneered the way for anyone to create their own
+          currency and reward early adopters.
         </Text>
         <Text fontSize="md" mb={4}>
           Within weeks of launching, we reached a market cap of over $500K USD.
@@ -231,7 +225,7 @@ const MyStorySection = () => {
           >
             hackNY fellowship
           </ChakraLink>
-          . Now, back in Toronto, I&apos;m gearing up to wrap up my final two
+          . Now, back in Canada, I&apos;m gearing up to wrap up my final two
           semesters of university before I return to the US to embark full-time
           on my next venture.
         </Text>
