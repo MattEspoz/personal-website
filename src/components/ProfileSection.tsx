@@ -216,8 +216,8 @@ const ProfileSection = () => {
           >
             Halation
           </Link>
-          , a holding company for building & buying internet companies. I also
-          write life updates 👇
+          , a holdCo for building & buying internet companies. I also write life
+          updates 👇
         </Text>
 
         <iframe
