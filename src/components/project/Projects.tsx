@@ -35,24 +35,6 @@ const Projects = () => {
         </Box>
         <Box flex="1" mb={6}>
           <ProjectCard
-            title="Ghostmode"
-            description="AI for building LinkedIn Posts"
-            demoUrl="https://ghostmode.ai/"
-            tag="Featured"
-          />
-        </Box>
-      </Flex>
-      <Flex direction={{ base: "column", md: "row" }} mt={3}>
-        <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
-          <ProjectCard
-            title="MatchSync"
-            description="Find Your Next Co-Founder"
-            demoUrl="https://matchsync.ai/"
-            tag="Personal Project"
-          />
-        </Box>
-        <Box flex="1" mb={6}>
-          <ProjectCard
             title="Journey+"
             description="The First Midjourney-powered Interface"
             demoUrl="https://www.journeyplus.ai/"
