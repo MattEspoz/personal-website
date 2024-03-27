@@ -207,7 +207,7 @@ const ProfileSection = () => {
           <Box as="span" fontWeight="bold">
             TL;DR:
           </Box>{" "}
-          I&apos;m a 21 y/o whose first startup was acquired by a $50m company.
+          I&apos;m a 22 y/o whose first startup was acquired by a $50m company.
           Now, I&apos;m building{" "}
           <Link
             href="https://twitter.com/halationco/"
