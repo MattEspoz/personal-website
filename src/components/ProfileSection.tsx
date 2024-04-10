@@ -236,7 +236,7 @@ const ProfileSection = () => {
         <Text fontSize="xs" color="gray.500" mt={4}>
           Press:{" "}
           <Link
-            href="https://forbesbaltics.com/lv/viedokli/raksts/kerot-web-3-tendencu-vilni"
+            href="https://web.archive.org/web/20230610081204/https://forbesbaltics.com/lv/viedokli/raksts/kerot-web-3-tendencu-vilni"
             isExternal
             textDecoration="underline"
           >
