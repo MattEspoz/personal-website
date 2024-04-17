@@ -35,7 +35,7 @@ const Projects = () => {
         </Box>
         <Box flex="1" mb={6}>
           <ProjectCard
-            title="Journey+"
+            title="Journey+ (acq.)"
             description="The First Midjourney-powered Interface"
             demoUrl="https://www.journeyplus.ai/"
             tag="Stealth"
