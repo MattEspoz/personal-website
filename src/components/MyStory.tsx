@@ -45,7 +45,7 @@ const MyStorySection = () => {
         </Text>
         */}
         <Text fontSize="md" mb={4}>
-          Early on, I learned a crucial lesson –
+          Early on, I learned a crucial lesson ~
         </Text>
         <Text fontSize="md" mb={4}>
           Building side projects leads to{" "}
@@ -158,7 +158,7 @@ const MyStorySection = () => {
           </ChakraLink>
           ,{" "}
           <ChakraLink
-            href="https://www.1517.org/"
+            href="http://hackny.org/"
             isExternal
             textDecoration="underline"
             _hover={{
@@ -167,7 +167,7 @@ const MyStorySection = () => {
               top: "-2px",
             }}
           >
-            1517
+            hackNY fellowship
           </ChakraLink>
           ,{" "}
           <ChakraLink
@@ -211,23 +211,10 @@ const MyStorySection = () => {
           .
         </Text>
         <Text fontSize="md" mb={4}>
-          As of recently, I spent 10-weeks in NYC, being 1 of the 13 hackers
-          selected as part of the{" "}
-          <ChakraLink
-            href="http://hackny.org/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            hackNY fellowship
-          </ChakraLink>
-          . Now, back in Canada, I&apos;m gearing up to wrap up my final two
-          semesters of university before I return to the US to embark full-time
-          on my next venture.
+          At Microsoft HQ, I launched Halation – an empire that is building &
+          buying internet companies. Currently it's fully self-funded and we've
+          had one major exit from it already. Now we're building 12 companies in
+          12 months with an absolutely cracked team.
         </Text>
         <Text fontSize="md">
           You can find me at{" "}
