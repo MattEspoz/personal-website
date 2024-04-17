@@ -212,7 +212,7 @@ const MyStorySection = () => {
         </Text>
         <Text fontSize="md" mb={4}>
           At Microsoft HQ, I launched Halation – an empire that is building &
-          buying internet companies. Currently it's fully self-funded and
+          buying internet companies. Currently it&apos;s fully self-funded and
           we&apos;ve had one major exit from it already. Now we&apos;re building
           12 companies in 12 months with an absolutely cracked team.
         </Text>
