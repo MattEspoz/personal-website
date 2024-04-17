@@ -167,7 +167,7 @@ const MyStorySection = () => {
               top: "-2px",
             }}
           >
-            hackNY fellowship
+            hackNY
           </ChakraLink>
           ,{" "}
           <ChakraLink
