@@ -212,9 +212,9 @@ const MyStorySection = () => {
         </Text>
         <Text fontSize="md" mb={4}>
           At Microsoft HQ, I launched Halation – an empire that is building &
-          buying internet companies. Currently it's fully self-funded and we've
-          had one major exit from it already. Now we're building 12 companies in
-          12 months with an absolutely cracked team.
+          buying internet companies. Currently it's fully self-funded and
+          we&apos;ve had one major exit from it already. Now we&apos;re building
+          12 companies in 12 months with an absolutely cracked team.
         </Text>
         <Text fontSize="md">
           You can find me at{" "}
