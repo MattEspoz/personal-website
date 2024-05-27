@@ -37,7 +37,7 @@ const Projects = () => {
           <ProjectCard
             title="Journey+ (acq.)"
             description="The First Midjourney-powered Interface"
-            demoUrl="https://www.journeyplus.ai/"
+            demoUrl="https://www.imagineplus.ai/"
             tag="Stealth"
           />
         </Box>
