@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React, { useState } from "react";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { TiLocation } from "react-icons/ti";
 import CalloutButton from "./CalloutButton";
 
@@ -110,12 +110,12 @@ const ProfileSection = () => {
         </Box>
         <HStack mt={2} spacing={2}>
           <IconButton
-            aria-label="Instagram"
-            icon={<FaInstagram />}
+            aria-label="YouTube"
+            icon={<FaYoutube />}
             fontSize="xl"
             size="sm"
             as={Link}
-            href="https://www.instagram.com/mattespoz/"
+            href="https://www.youtube.com/@MattEspoz"
             target="_blank"
             rel="noopener noreferrer"
             _hover={{
