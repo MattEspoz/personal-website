@@ -160,6 +160,15 @@ const MyStorySection = () => {
             @mattespoz
           </ChakraLink>{" "}
           on the rest of the internet.
+          <Box
+            as="img"
+            src="/assets/signature.png"
+            alt="Cover image"
+            width="35px"
+            height="auto"
+            mt={4}
+            borderRadius="lg"
+          />
         </Text>
       </Box>
     </Box>
