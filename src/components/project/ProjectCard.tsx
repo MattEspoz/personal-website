@@ -26,15 +26,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const [isHovered, setIsHovered] = useState(false);
 
   const tagColors: { [key: string]: string } = {
-    "Personal Project": "linear-gradient(to right, #9EFF9C, #9AFEDC)",
-    Stealth: "linear-gradient(to right, #D3A4FF, #F2A5FD)",
+    Stealth: "linear-gradient(to right, #9EFF9C, #9AFEDC)",
+    Active: "linear-gradient(to right, #D3A4FF, #F2A5FD)",
     Featured: "linear-gradient(to right, #FED79C, #FDEBA8)",
+    Sold: "linear-gradient(to right, #FF9C9C, #FFB8B8)",
   };
 
   const tagTextColor: { [key: string]: string } = {
-    "Personal Project": "#056602",
-    Stealth: "#390B66",
+    Stealth: "#056602",
+    Active: "#390B66",
     Featured: "#653E02",
+    Sold: "#660202",
   };
 
   const backgroundGradient = tagColors[tag] || "transparent";
@@ -92,7 +94,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <Heading as="h4" size="md" mb={2}>
             {title}
           </Heading>
-          <Text fontSize="sm" color={descriptionTextColor} mb={3}>
+          <Text fontSize="sm" color={descriptionTextColor} mb={1}>
             {description}
           </Text>
         </CardBody>

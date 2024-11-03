@@ -210,7 +210,7 @@ const ProfileSection = () => {
           I&apos;m a 22 y/o whose first startup was acquired by a $50m company.
           Now, I&apos;m building{" "}
           <Link
-            href="https://twitter.com/halationco/"
+            href="https://halationstudio.co/"
             isExternal
             textDecoration="underline"
           >

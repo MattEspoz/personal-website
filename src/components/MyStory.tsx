@@ -211,9 +211,22 @@ const MyStorySection = () => {
           .
         </Text>
         <Text fontSize="md" mb={4}>
-          Now I&apos;m building Halation – an empire that is building & buying
-          internet companies. Currently it&apos;s fully self-funded and
-          we&apos;ve had one major exit from it already. Launching companies with an absolutely cracked team.
+          Now I&apos;m building{" "}
+          <ChakraLink
+            href="https://halationstudio.co"
+            isExternal
+            textDecoration="underline"
+            _hover={{
+              color: "#9F7AEA",
+              position: "relative",
+              top: "-2px",
+            }}
+          >
+            Halation
+          </ChakraLink>{" "}
+          – an empire that is building & buying internet companies. Currently
+          it&apos;s fully self-funded and we&apos;ve had one major exit from it
+          already. Launching companies with an absolutely cracked team.
         </Text>
         <Text fontSize="md">
           You can find me at{" "}
