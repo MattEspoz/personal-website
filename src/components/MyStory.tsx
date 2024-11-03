@@ -48,13 +48,13 @@ const MyStorySection = () => {
           Early on, I learned a crucial lesson ~
         </Text>
         <Text fontSize="md" mb={4}>
-          Building side projects leads to{" "}
+          Building companies leads to{" "}
           <Text as="span" fontWeight="bold">
             unparalleled avenues of opportunity.
           </Text>
         </Text>
         <Text fontSize="md" mb={4}>
-          During my first year of University, I built{" "}
+          I built my{" "}
           <ChakraLink
             href="https://agoralabs.xyz/"
             isExternal
@@ -65,16 +65,12 @@ const MyStorySection = () => {
               top: "-2px",
             }}
           >
-            Agora Labs
+            first software company
           </ChakraLink>{" "}
-          — a platform that pioneered the way for anyone to create their own
-          currency and reward early adopters.
-        </Text>
-        <Text fontSize="md" mb={4}>
-          Within weeks of launching, we reached a market cap of over $500K USD.
-          We later raised hundreds of thousands from investors including the{" "}
+          when I was 18 where we raised hundreds of thousands from investors.
+          Almost exactly a year later, on October 2022, it was acquired by a{" "}
           <ChakraLink
-            href="https://www.coindesk.com/business/2021/10/05/deso-launches-50m-fund-for-decentralized-social-ecosystem/"
+            href="https://x.com/MattEspoz/status/1578055365479915520"
             isExternal
             textDecoration="underline"
             _hover={{
@@ -83,135 +79,13 @@ const MyStorySection = () => {
               top: "-2px",
             }}
           >
-            DeSo Octane Fund
-          </ChakraLink>
-          ,{" "}
-          <ChakraLink
-            href="https://www.zfellows.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            ZFellows
-          </ChakraLink>
-          ,{" "}
-          <ChakraLink
-            href="https://www.envisionaccelerator.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Envision Accelerator
-          </ChakraLink>
-          , and{" "}
-          <ChakraLink
-            href="https://www.harmony.one/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Harmony Protocol
+            $50m company
           </ChakraLink>{" "}
-          amongst others. Almost exactly a year later, on October 2022, Agora
-          Labs was acquired by{" "}
-          <ChakraLink
-            href="https://www.talentprotocol.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Talent Protocol
-          </ChakraLink>{" "}
-          and integrated with their 300K+ userbase.
+          and integrated with 1M+ userbase.
         </Text>
+
         <Text fontSize="md" mb={4}>
-          Through this journey, I found a sense of belonging by immersing myself
-          in various tech communities where I met some of my current closest
-          friends. Prominent among these communities were{" "}
-          <ChakraLink
-            href="https://www.buildergroop.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Buildergroop
-          </ChakraLink>
-          ,{" "}
-          <ChakraLink
-            href="http://hackny.org/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            hackNY
-          </ChakraLink>
-          ,{" "}
-          <ChakraLink
-            href="https://www.socratica.info/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Socratica
-          </ChakraLink>
-          ,{" "}
-          <ChakraLink
-            href="https://neo.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Neo
-          </ChakraLink>
-          , and{" "}
-          <ChakraLink
-            href="https://www.innercirclehq.com/"
-            isExternal
-            textDecoration="underline"
-            _hover={{
-              color: "#9F7AEA",
-              position: "relative",
-              top: "-2px",
-            }}
-          >
-            Inner Circle
-          </ChakraLink>
-          .
-        </Text>
-        <Text fontSize="md" mb={4}>
-          Now I&apos;m building{" "}
+          Then in 2024, I started{" "}
           <ChakraLink
             href="https://halationstudio.co"
             isExternal
@@ -224,9 +98,52 @@ const MyStorySection = () => {
           >
             Halation
           </ChakraLink>{" "}
-          – an empire that is building & buying internet companies. Currently
-          it&apos;s fully self-funded and we&apos;ve had one major exit from it
-          already. Launching companies with an absolutely cracked team.
+          – an empire that is building & buying internet companies. Our first
+          portfolio company was{" "}
+          <ChakraLink
+            href="https://x.com/MattEspoz/status/1783184650933866734"
+            isExternal
+            textDecoration="underline"
+            _hover={{
+              color: "#9F7AEA",
+              position: "relative",
+              top: "-2px",
+            }}
+          >
+            Journey+
+          </ChakraLink>{" "}
+          which was built, scaled, and sold to private equity in 3 months. In
+          the following eight months, we incubated three more companies with
+          incredible operators.
+        </Text>
+        <Text fontSize="md" mb={4}>
+          I share my learnings publicly on{" "}
+          <ChakraLink
+            href="https://twitter.com/mattespoz"
+            isExternal
+            textDecoration="underline"
+            _hover={{
+              color: "#9F7AEA",
+              position: "relative",
+              top: "-2px",
+            }}
+          >
+            Twitter
+          </ChakraLink>{" "}
+          and{" "}
+          <ChakraLink
+            href="https://www.youtube.com/@mattespoz"
+            isExternal
+            textDecoration="underline"
+            _hover={{
+              color: "#9F7AEA",
+              position: "relative",
+              top: "-2px",
+            }}
+          >
+            YouTube
+          </ChakraLink>
+          .
         </Text>
         <Text fontSize="md">
           You can find me at{" "}
