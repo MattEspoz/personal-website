@@ -81,7 +81,7 @@ const MyStorySection = () => {
           >
             $50m company
           </ChakraLink>{" "}
-          and integrated with 1M+ userbase.
+          and integrated with their 1M+ userbase.
         </Text>
 
         <Text fontSize="md" mb={4}>
