@@ -67,7 +67,7 @@ const Footer = () => {
                 // Add more styles as needed
               }}
             >
-              (read by 10,000+ people)
+              (read by 100,000+ people)
             </span>
           </p>
         </div>

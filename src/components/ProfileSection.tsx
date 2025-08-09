@@ -207,17 +207,20 @@ const ProfileSection = () => {
           <Box as="span" fontWeight="bold">
             TL;DR:
           </Box>{" "}
-          I&apos;m a 22 y/o whose first startup was acquired by a $50m company.
-          Now, I&apos;m building{" "}
+          I&apos;m a 23 y/o whose first startup was acquired by a $50m company.
+          Now, building{" "}
           <Link
-            href="https://halationstudio.co/"
+            href="https://cloverlabs.ai/"
             isExternal
             textDecoration="underline"
+            _hover={{
+              color: colorMode === "light" ? "green.700" : "green.200",
+            }}
           >
-            Halation
+            ☘️ Clover Labs
           </Link>
-          , a holdCo for building internet companies. I also write life updates
-          👇
+          , a portfolio of viral ai growth agents to solve distribution at
+          scale.
         </Text>
 
         <iframe
@@ -233,35 +236,18 @@ const ProfileSection = () => {
           }}
         ></iframe>
 
+        <Text fontSize="sm" color="gray.500" mt={3}>
+          I write life updates on the journey 👆
+        </Text>
+
         <Text fontSize="xs" color="gray.500" mt={4}>
           Press:{" "}
-          <Link
-            href="https://web.archive.org/web/20230610081204/https://forbesbaltics.com/lv/viedokli/raksts/kerot-web-3-tendencu-vilni"
-            isExternal
-            textDecoration="underline"
-          >
-            Forbes
-          </Link>{" "}
           <Link
             href="https://www.forbes.com/sites/annefield/2023/05/29/teaching-entrepreneurship-and-vc-skills-to--students-of-color-and-women/"
             isExternal
             textDecoration="underline"
           >
-            (2),
-          </Link>{" "}
-          <Link
-            href="https://finance.yahoo.com/finance/news/talent-protocol-supports-next-generation-130000334.html"
-            isExternal
-            textDecoration="underline"
-          >
-            Yahoo,
-          </Link>{" "}
-          <Link
-            href="https://www.bloomberg.com/press-releases/2022-10-05/talent-protocol-supports-the-next-generation-of-builders-through-the-acquisition-of-agora-labs"
-            isExternal
-            textDecoration="underline"
-          >
-            Bloomberg,
+            Forbes,
           </Link>{" "}
           <Link
             href="https://top.mlh.io/2023/profiles/matt-espinoza"

@@ -29,17 +29,17 @@ const Projects = () => {
         <Flex direction={{ base: "column", md: "row" }} mb={1}>
           <Box flex="1" mb={6} mr={{ base: 0, md: 6 }}>
             <ProjectCard
-              title="1Price.co"
-              description="Price experiments on autopilot"
-              demoUrl="https://1price.co"
+              title="Clover"
+              description="Holdco for next-gen internet products"
+              demoUrl="https://cloverlabs.ai"
               tag="Featured"
             />
           </Box>
           <Box flex="1" mb={6}>
             <ProjectCard
-              title="Halation"
-              description="Holdco for next-gen internet products"
-              demoUrl="https://halationstudio.co"
+              title="1Price.co"
+              description="Price experiments on autopilot"
+              demoUrl="https://1price.co"
               tag="Active"
             />
           </Box>
